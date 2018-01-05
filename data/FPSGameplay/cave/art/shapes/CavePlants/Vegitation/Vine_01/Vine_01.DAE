@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>RonMain</author>
+      <authoring_tool>OpenCOLLADA for 3ds Max;  Version: 1.2.5;  Revision: 673;  Platform: Win32;  Configuration: Release Max9</authoring_tool>
+      <source_data>file:///E:/3TDS%20Torque%20Model%20Library/Caves/Vegitation/Vine_01/Vine_01_Final.max</source_data>
+    </contributor>
+    <created>2013-02-13T16:45:56</created>
+    <modified>2013-02-13T16:45:56</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="Vine04">
+      <profile_COMMON>
+        <newparam sid="_td_Vino_04_png-surface">
+          <surface type="2D">
+            <init_from>_td_Vino_04_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="_td_Vino_04_png-sampler">
+          <sampler2D>
+            <source>_td_Vino_04_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.5882353 0.5882353 0.5882353 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="_td_Vino_04_png-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0.9 0.9 0.9 1</color>
+            </specular>
+            <shininess>
+              <float>55</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <texture texture="_td_Vino_04_png-sampler" texcoord="CHANNEL1"/>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <apply_reflection_dimming>0</apply_reflection_dimming>
+            <dim_level>0</dim_level>
+            <falloff_type>0</falloff_type>
+            <index_of_refraction>1.5</index_of_refraction>
+            <opacity_type>0</opacity_type>
+            <reflection_level>3</reflection_level>
+            <wire_size>1</wire_size>
+            <wire_units>0</wire_units>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_lock>1</ambient_diffuse_lock>
+            <ambient_diffuse_texture_lock>1</ambient_diffuse_texture_lock>
+            <diffuse_specular_lock>0</diffuse_specular_lock>
+            <soften>0.1</soften>
+            <use_self_illum_color>0</use_self_illum_color>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="Vine04-material" name="Vine04">
+      <instance_effect url="#Vine04"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="geom-VineOne200" name="VineOne200">
+      <mesh>
+        <source id="geom-VineOne200-positions">
+          <float_array id="geom-VineOne200-positions-array" count="36">-5 1.5828 -0.02984142 -5 1.647283 -3.363174 -5 1.647282 -6.696507 -4.999999 1.1382 -10.02984 -6.68702e-8 1.5828 -0.02984095 2.43451e-7 -1.842049 -3.363174 4.21401e-7 -1.842049 -6.696507 4.86415e-7 1.1382 -10.02984 4.999999 1.5828 -0.02984047 5 1.842051 -3.363174 5 1.842051 -6.696507 5 1.1382 -10.02984</float_array>
+          <technique_common>
+            <accessor source="#geom-VineOne200-positions-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-VineOne200-normals">
+          <float_array id="geom-VineOne200-normals-array" count="36">-0.3779288 -0.8672346 0.3241512 -0.5722696 -0.8200275 -0.007903119 0.05920127 -0.9546957 0.2916354 0.1777217 -0.7833303 0.5956582 -0.4106304 -0.9064773 -0.0983952 -0.04464543 -0.9651763 -0.2577626 -2.8796e-8 -0.9885377 0.150974 -0.1794706 -0.8233806 -0.5383629 0.4238224 -0.894525 0.1421257 7.39489e-9 -0.9969892 -0.07754106 0.5912543 -0.8024405 0.08066948 0.4142347 -0.8928152 -0.1768917</float_array>
+          <technique_common>
+            <accessor source="#geom-VineOne200-normals-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-VineOne200-map1">
+          <float_array id="geom-VineOne200-map1-array" count="36">-0.001656711 0.9973347 0.07079935 -2.16007e-4 0.6643376 0.05331385 0.001224667 0.3313405 0.05331385 0.002665371 -0.001656651 0.1913593 0.4978389 0.9994957 0.07079935 0.4992796 0.6664986 0.9995005 0.5007204 0.3335015 0.9995005 0.502161 5.04375e-4 0.1913593 0.9973346 1.001657 0.07079935 0.9987754 0.6686597 4.99457e-4 1.000216 0.3356625 4.99457e-4 1.001657 0.00266543 0.1913593</float_array>
+          <technique_common>
+            <accessor source="#geom-VineOne200-map1-array" count="12" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-VineOne200-map1-textangents">
+          <float_array id="geom-VineOne200-map1-textangents-array" count="36">0.874073 -0.370853 0.02690371 0.820064 -0.5722609 -0.003547815 0.8458598 0.05589366 0.01126563 0.9336862 0.2039299 -0.01039497 0.8740367 -0.3953527 -0.00536416 0.8474748 -0.04150424 0.00862438 0.9999904 -6.60744e-4 -0.004326185 0.9385291 -0.1980366 -0.009991122 0.8641237 0.4084746 -0.005940499 0.9999906 3.36485e-4 -0.004326281 0.8052263 0.5929574 -0.003476718 0.8578338 0.3949826 0.01525256</float_array>
+          <technique_common>
+            <accessor source="#geom-VineOne200-map1-textangents-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-VineOne200-map1-texbinormals">
+          <float_array id="geom-VineOne200-map1-texbinormals-array" count="36">-0.1019932 -0.3089881 -0.9455812 0.001613339 0.008511369 -0.9999625 0.03191376 -0.2901884 -0.9564372 0.1185764 -0.5838378 -0.8031644 0.03548214 0.09194509 -0.9951317 0.02241782 0.2569869 -0.9661548 -0.004376352 -0.1509726 -0.9885283 0.102569 0.5286044 -0.8426488 0.05517847 -0.1311247 -0.9898291 -0.004339347 0.07754033 -0.9969798 0.04504371 -0.06701281 -0.9967348 -0.05955542 0.1673458 -0.9840978</float_array>
+          <technique_common>
+            <accessor source="#geom-VineOne200-map1-texbinormals-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-VineOne200-vertices">
+          <input semantic="POSITION" source="#geom-VineOne200-positions"/>
+        </vertices>
+        <triangles material="Vine04_1" count="12">
+          <input semantic="VERTEX" source="#geom-VineOne200-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-VineOne200-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#geom-VineOne200-map1" offset="2" set="1"/>
+          <input semantic="TEXTANGENT" source="#geom-VineOne200-map1-textangents" offset="3" set="1"/>
+          <input semantic="TEXBINORMAL" source="#geom-VineOne200-map1-texbinormals" offset="3" set="1"/>
+          <p>0 0 0 0 1 1 1 1 5 2 5 2 5 2 5 2 4 3 4 3 0 0 0 0 1 1 1 1 2 4 2 4 6 5 6 5 6 5 6 5 5 2 5 2 1 1 1 1 2 4 2 4 3 6 3 6 7 7 7 7 7 7 7 7 6 5 6 5 2 4 2 4 4 3 4 3 5 2 5 2 9 8 9 8 9 8 9 8 8 9 8 9 4 3 4 3 5 2 5 2 6 5 6 5 10 10 10 10 10 10 10 10 9 8 9 8 5 2 5 2 6 5 6 5 7 7 7 7 11 11 11 11 11 11 11 11 10 10 10 10 6 5 6 5</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_lights>
+    <light id="EnvironmentAmbientLight" name="EnvironmentAmbientLight">
+      <technique_common>
+        <ambient>
+          <color>0 0 0</color>
+        </ambient>
+      </technique_common>
+    </light>
+  </library_lights>
+  <library_images>
+    <image id="_td_Vino_04_png">
+      <init_from>file:///C:/Users/RonMain/Documents/3dsmax/sceneassets/Caves/3td_Vino_04.png</init_from>
+    </image>
+  </library_images>
+  <library_visual_scenes>
+    <visual_scene id="MaxScene">
+      <node name="EnvironmentAmbientLight">
+        <instance_light url="#EnvironmentAmbientLight"/>
+      </node>
+      <node id="node-Base01" name="Base01">
+        <translate>0.2320186 -2.088169 -5.261721</translate>
+        <node id="node-Start01" name="Start01">
+          <node id="node-VineOne200" name="VineOne200">
+            <translate>0.4080158 -0.991596 15.22149</translate>
+            <instance_geometry url="#geom-VineOne200">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Vine04_1" target="#Vine04-material">
+                    <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="1"/>
+                    <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="1"/>
+                  </instance_material>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+          </node>
+        </node>
+        <node id="node-detail200" name="detail200"/>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#MaxScene"/>
+  </scene>
+</COLLADA>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>RonMain</author>
+      <authoring_tool>OpenCOLLADA for 3ds Max;  Version: 1.2.5;  Revision: 673;  Platform: Win32;  Configuration: Release Max9</authoring_tool>
+      <source_data>file:///E:/3TDS%20Torque%20Model%20Library/Caves/Vegitation/Clump_02/Clump_02_Final.max</source_data>
+    </contributor>
+    <created>2013-02-13T16:36:30</created>
+    <modified>2013-02-13T16:36:30</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="greenHanger1">
+      <profile_COMMON>
+        <newparam sid="_td_GreenHanger_01_png-surface">
+          <surface type="2D">
+            <init_from>_td_GreenHanger_01_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="_td_GreenHanger_01_png-sampler">
+          <sampler2D>
+            <source>_td_GreenHanger_01_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.5882353 0.5882353 0.5882353 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="_td_GreenHanger_01_png-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0.9 0.9 0.9 1</color>
+            </specular>
+            <shininess>
+              <float>55</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <texture texture="_td_GreenHanger_01_png-sampler" texcoord="CHANNEL1"/>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <apply_reflection_dimming>0</apply_reflection_dimming>
+            <dim_level>0</dim_level>
+            <falloff_type>0</falloff_type>
+            <index_of_refraction>1.5</index_of_refraction>
+            <opacity_type>0</opacity_type>
+            <reflection_level>3</reflection_level>
+            <wire_size>1</wire_size>
+            <wire_units>0</wire_units>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_lock>1</ambient_diffuse_lock>
+            <ambient_diffuse_texture_lock>1</ambient_diffuse_texture_lock>
+            <diffuse_specular_lock>0</diffuse_specular_lock>
+            <soften>0.1</soften>
+            <use_self_illum_color>0</use_self_illum_color>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="greenHanger1-material" name="greenHanger1">
+      <instance_effect url="#greenHanger1"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="geom-ClumpTwo200" name="ClumpTwo200">
+      <mesh>
+        <source id="geom-ClumpTwo200-positions">
+          <float_array id="geom-ClumpTwo200-positions-array" count="36">-5 -5 1.496965 -1.666667 -5 1.432483 1.666666 -5 1.432483 5 -5 1.941565 -5 6.54344e-8 1.496965 -1.666667 1.97805e-7 4.921815 1.666667 1.97805e-7 4.921815 5 8.48685e-8 1.941565 -5 5 1.496965 -1.666667 5 1.237715 1.666667 5 1.237715 5 5 1.941565</float_array>
+          <technique_common>
+            <accessor source="#geom-ClumpTwo200-positions-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-ClumpTwo200-normals">
+          <float_array id="geom-ClumpTwo200-normals-array" count="36">-0.3241512 -0.3779288 0.8672346 0.007903108 -0.5722697 0.8200274 -0.2916354 0.05920116 0.9546957 -0.5956582 0.1777218 0.7833303 0.09839526 -0.4106305 0.9064772 0.2577626 -0.04464553 0.9651763 -0.150974 0 0.9885377 0.5383629 -0.1794706 0.8233808 -0.1421257 0.4238223 0.894525 0.0775411 0 0.9969892 -0.08066943 0.5912544 0.8024406 0.1768918 0.4142346 0.8928152</float_array>
+          <technique_common>
+            <accessor source="#geom-ClumpTwo200-normals-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-ClumpTwo200-map1">
+          <float_array id="geom-ClumpTwo200-map1-array" count="36">4.99517e-4 4.99755e-4 0.8882111 0.3334997 4.99666e-4 0.8720702 0.6665 4.99606e-4 0.8720702 0.9995003 4.99517e-4 0.9995005 4.99636e-4 0.5000001 0.8882111 0.3334998 0.5 4.99547e-4 0.6665001 0.4999999 4.99547e-4 0.9995004 0.4999999 0.9995005 4.99755e-4 0.9995005 0.8882111 0.3335 0.9995004 0.8233171 0.6665002 0.9995003 0.8233171 0.9995005 0.9995003 0.9995005</float_array>
+          <technique_common>
+            <accessor source="#geom-ClumpTwo200-map1-array" count="12" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-ClumpTwo200-map1-textangents">
+          <float_array id="geom-ClumpTwo200-map1-textangents-array" count="36">0.8574775 0.01030367 0.3249944 0.999917 0.001497173 -0.008591988 0.888263 0.002205109 0.2712052 0.7252702 0.02149367 0.5466318 0.9178459 -0.02714475 -0.1119258 0.8977078 0.002400528 -0.2396332 0.9885377 2.65412e-7 0.150974 0.7616156 0.02163143 -0.4932631 0.9070928 -0.02666063 0.1567542 0.9969892 3.56908e-7 -0.0775411 0.9908057 0.01467986 0.08878938 0.8713029 0.02188807 -0.1827849</float_array>
+          <technique_common>
+            <accessor source="#geom-ClumpTwo200-map1-textangents-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-ClumpTwo200-map1-texbinormals">
+          <float_array id="geom-ClumpTwo200-map1-texbinormals-array" count="36">0.1436774 -0.9257665 -0.3497331 -0.003689377 -0.8200641 -0.5722597 -0.01502075 -0.9982432 0.0573131 -0.08840502 -0.9837963 0.1559787 -0.07628423 -0.9113295 -0.4045482 -0.009020792 -0.9989996 -0.04380095 2.62369e-7 -1 4.00703e-8 -0.07791004 -0.9834746 -0.1634249 -0.09803695 -0.9052826 0.4133427 3.55833e-7 -1 -2.7675e-8 -0.04092675 -0.8063502 0.5900207 0.1069666 -0.9098382 0.4009396</float_array>
+          <technique_common>
+            <accessor source="#geom-ClumpTwo200-map1-texbinormals-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-ClumpTwo200-vertices">
+          <input semantic="POSITION" source="#geom-ClumpTwo200-positions"/>
+        </vertices>
+        <triangles material="greenHanger1_1" count="12">
+          <input semantic="VERTEX" source="#geom-ClumpTwo200-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-ClumpTwo200-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#geom-ClumpTwo200-map1" offset="2" set="1"/>
+          <input semantic="TEXTANGENT" source="#geom-ClumpTwo200-map1-textangents" offset="3" set="1"/>
+          <input semantic="TEXBINORMAL" source="#geom-ClumpTwo200-map1-texbinormals" offset="3" set="1"/>
+          <p>0 0 0 0 1 1 1 1 5 2 5 2 5 2 5 2 4 3 4 3 0 0 0 0 1 1 1 1 2 4 2 4 6 5 6 5 6 5 6 5 5 2 5 2 1 1 1 1 2 4 2 4 3 6 3 6 7 7 7 7 7 7 7 7 6 5 6 5 2 4 2 4 4 3 4 3 5 2 5 2 9 8 9 8 9 8 9 8 8 9 8 9 4 3 4 3 5 2 5 2 6 5 6 5 10 10 10 10 10 10 10 10 9 8 9 8 5 2 5 2 6 5 6 5 7 7 7 7 11 11 11 11 11 11 11 11 10 10 10 10 6 5 6 5</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_lights>
+    <light id="EnvironmentAmbientLight" name="EnvironmentAmbientLight">
+      <technique_common>
+        <ambient>
+          <color>0 0 0</color>
+        </ambient>
+      </technique_common>
+    </light>
+  </library_lights>
+  <library_images>
+    <image id="_td_GreenHanger_01_png">
+      <init_from>file:///C:/Users/RonMain/Documents/3dsmax/sceneassets/Caves/3td_GreenHanger_01.png</init_from>
+    </image>
+  </library_images>
+  <library_visual_scenes>
+    <visual_scene id="MaxScene">
+      <node name="EnvironmentAmbientLight">
+        <instance_light url="#EnvironmentAmbientLight"/>
+      </node>
+      <node id="node-Base01" name="Base01">
+        <translate>0.2320186 -2.088169 -5.261721</translate>
+        <node id="node-Start01" name="Start01">
+          <node id="node-ClumpTwo200" name="ClumpTwo200">
+            <translate>-0.09269699 2.088169 15.2755</translate>
+            <rotate>-1 0 0 -90</rotate>
+            <node>
+              <matrix>1 0 0 0 0 1 0 -5.02972 0 0 1 0 0 0 0 1</matrix>
+              <instance_geometry url="#geom-ClumpTwo200">
+                <bind_material>
+                  <technique_common>
+                    <instance_material symbol="greenHanger1_1" target="#greenHanger1-material">
+                      <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="1"/>
+                      <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="1"/>
+                    </instance_material>
+                  </technique_common>
+                </bind_material>
+              </instance_geometry>
+            </node>
+          </node>
+        </node>
+        <node id="node-detail200" name="detail200"/>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#MaxScene"/>
+  </scene>
+</COLLADA>
