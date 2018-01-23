@@ -5,8 +5,8 @@
 Designed by:
 Ron Kapaun, 3TD Studios, LLC
 
-http://3tdstudios.com
-http://www.garagegames.com/account/profile/18261
+* http://3tdstudios.com
+* http://www.garagegames.com/account/profile/18261
 
 ## Instruction
 
