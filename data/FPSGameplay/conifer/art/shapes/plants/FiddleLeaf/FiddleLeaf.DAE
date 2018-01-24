@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Owner</author>
+      <authoring_tool>OpenCOLLADA for 3ds Max;  Version: 1.2.5;  Revision: 673;  Platform: Win32;  Configuration: Release Max9</authoring_tool>
+      <source_data>file:///C:/Users/Owner/Documents/3dsmax/scenes/TORQUE/PLANTS/Brush/Brush002.max</source_data>
+    </contributor>
+    <created>2012-01-15T15:01:23</created>
+    <modified>2012-01-15T15:01:23</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="FiddleLeaf">
+      <profile_COMMON>
+        <newparam sid="Fiddle_leaf_png-surface">
+          <surface type="2D">
+            <init_from>Fiddle_leaf_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Fiddle_leaf_png-sampler">
+          <sampler2D>
+            <source>Fiddle_leaf_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.5882353 0.5882353 0.5882353 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="Fiddle_leaf_png-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0.9 0.9 0.9 1</color>
+            </specular>
+            <shininess>
+              <float>9.999999</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <texture texture="Fiddle_leaf_png-sampler" texcoord="CHANNEL1"/>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <apply_reflection_dimming>0</apply_reflection_dimming>
+            <dim_level>0</dim_level>
+            <falloff_type>0</falloff_type>
+            <index_of_refraction>1.5</index_of_refraction>
+            <opacity_type>0</opacity_type>
+            <reflection_level>3</reflection_level>
+            <wire_size>1</wire_size>
+            <wire_units>0</wire_units>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_lock>1</ambient_diffuse_lock>
+            <ambient_diffuse_texture_lock>1</ambient_diffuse_texture_lock>
+            <diffuse_specular_lock>0</diffuse_specular_lock>
+            <soften>0.1</soften>
+            <use_self_illum_color>0</use_self_illum_color>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="FiddleLeaf-material" name="FiddleLeaf">
+      <instance_effect url="#FiddleLeaf"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="geom-Plane03" name="Plane03">
+      <mesh>
+        <source id="geom-Plane03-positions">
+          <float_array id="geom-Plane03-positions-array" count="135">-3.187152 2.176422 3.553926 -1.101592 0.003076054 4.115772 0.9978607 2.168009 4.68136 -2.081868 2.176421 -0.5488654 -4.00289e-4 -0.001875356 0.01187834 2.103144 2.168008 0.5785686 -1.105864 -2.228275 4.114621 0.005236818 -0.003133468 0.02353841 -5.79787e-4 -2.228276 0.01183023 -0.9021626 2.176422 4.687689 1.174965 0.003076054 4.095429 3.265929 2.168009 3.499224 -2.067279 2.176421 0.601486 0.005773245 -0.001875356 0.01038868 2.100813 2.168008 -0.5869793 1.17071 -2.228275 4.096642 0.01660959 -0.003133468 0.01748149 0.0055946 -2.228276 0.01043987 -2.292173 0.5446572 4.687689 0.6861647 0.9537976 4.095429 0.1575968 3.91685 3.499224 -2.975057 -0.3993582 0.6014863 0.004903222 0.00357851 0.01038868 -0.525287 2.972835 -0.5869789 2.491585 -0.3574631 4.096642 0.01227386 0.01162108 0.01748149 1.808701 -1.301478 0.01043969 -2.292173 0.5446571 7.354692 0.6861649 0.9537975 6.762432 0.1575971 3.91685 6.166226 -2.975057 -0.3993583 3.268489 0.004903495 0.003578395 2.677391 -0.5252867 2.972835 2.080024 2.491585 -0.3574632 6.763645 0.01227415 0.01162096 2.684484 1.808702 -1.301479 2.677443 -2.292172 -3.329567 6.011411 0.686165 -2.611364 5.962917 0.1575977 -0.3002251 7.910679 -2.975057 -0.7193342 2.728896 0.004903555 -0.00590271 2.67627 -0.5252864 2.310008 4.628164 2.491585 -3.428592 4.937469 0.01227415 -0.00644698 2.68698 1.808702 -0.8183597 1.654954</float_array>
+          <technique_common>
+            <accessor source="#geom-Plane03-positions-array" count="45" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Plane03-normals">
+          <float_array id="geom-Plane03-normals-array" count="135">0.004631751 0.004755762 0.9999779 0.004631749 0.004755761 0.9999779 0.003873633 0.005642222 0.9999766 2.80753e-5 0.007811711 0.9999695 -0.006344271 0.006597939 0.9999581 -0.006344271 0.006597939 0.9999581 0.006176675 -1.87933e-5 0.9999809 0.006176675 -1.87933e-5 0.9999809 0.006176675 -1.87933e-5 0.9999809 0.006436906 0.006640045 0.9999573 0.006436909 0.006640043 0.9999573 0.005057055 0.007397187 0.9999598 2.55692e-5 0.007824564 0.9999694 -0.004551779 0.004752763 0.9999784 -0.004551779 0.004752763 0.9999784 0.009909177 -3.02633e-5 0.9999509 0.009909177 -3.02633e-5 0.9999509 0.009909177 -3.02633e-5 0.9999509 -0.001607256 0.009107178 0.9999573 -0.001607256 0.009107178 0.9999573 -0.003029463 0.008432946 0.9999598 -0.006324733 0.004606758 0.9999694 -0.006518677 -9.02366e-4 0.9999784 -0.006518677 -9.02366e-4 0.9999784 0.005832372 0.008011003 0.9999509 0.005832372 0.008011003 0.9999509 0.00583237 0.008011003 0.9999509 -0.001607256 0.009107178 0.9999573 -0.001607257 0.009107178 0.9999573 -0.003029463 0.008432946 0.9999598 -0.006324733 0.004606758 0.9999694 -0.006518677 -9.02366e-4 0.9999784 -0.006518677 -9.02366e-4 0.9999784 0.00583237 0.008011003 0.9999509 0.005832373 0.008011002 0.9999509 0.005832373 0.008011002 0.9999509 -8.71599e-4 0.003856551 0.9999922 -8.71598e-4 0.003856551 0.9999922 -0.001712326 0.00360584 0.999992 -0.004556263 0.002072703 0.9999875 -0.007496342 -0.00181366 0.9999703 -0.007496342 -0.00181366 0.9999703 0.003232443 0.003987078 0.9999868 0.003232443 0.003987078 0.9999868 0.003232443 0.003987078 0.9999868</float_array>
+          <technique_common>
+            <accessor source="#geom-Plane03-normals-array" count="45" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Plane03-map0">
+          <float_array id="geom-Plane03-map0-array" count="180">0 0.9597033 0.04029667 0 0.9376515 0.06234848 0.7324322 0.206394 0.0600348 0 0 0.01691238 0 0 0.01691238 0.7324322 0.206394 0.0600348 0.001562147 0.1332112 0.8652267 3.00154e-5 0.4710394 0.5287505 0 0 0.0170906 0.7324322 0.206394 0.0600348 0 0 1 0 0.8068694 0.1931306 0 0.9597033 0.04029667 0 0.9376515 0.06234848 0.7324322 0.206394 0.0600348 0 0 0.01691238 0 0 0.01691238 0.7324322 0.206394 0.0600348 0.001562147 0.1332112 0.8652267 3.00154e-5 0.4710394 0.5287505 0 0 0.0170906 0.7324322 0.206394 0.0600348 0 0 1 0 0.8068694 0.1931306 0 0.9597033 0.04029667 0 0.9376515 0.06234848 0.7324322 0.206394 0.0600348 0 0 0.01691238 0 0 0.01691238 0.7324322 0.206394 0.0600348 0.001562147 0.1332112 0.8652267 3.00154e-5 0.4710394 0.5287505 0 0 0.0170906 0.7324322 0.206394 0.0600348 0 0 1 0 0.8068694 0.1931306 0 0.9597033 0.04029667 0 0.9376515 0.06234848 0.7324322 0.206394 0.0600348 0 0 0.01691238 0 0 0.01691238 0.7324322 0.206394 0.0600348 0.001562147 0.1332112 0.8652267 3.00154e-5 0.4710394 0.5287505 0 0 0.0170906 0.7324322 0.206394 0.0600348 0 0 1 0 0.8068694 0.1931306 0 0.9597033 0.04029667 0 0.9376515 0.06234848 0.7324322 0.206394 0.0600348 0 0 0.01691238 0 0 0.01691238 0.7324322 0.206394 0.0600348 0.001562147 0.1332112 0.8652267 3.00154e-5 0.4710394 0.5287505 0 0 0.0170906 0.7324322 0.206394 0.0600348 0 0 1 0 0.8068694 0.1931306</float_array>
+          <technique_common>
+            <accessor source="#geom-Plane03-map0-array" count="60" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Plane03-map1">
+          <float_array id="geom-Plane03-map1-array" count="150">0.9995004 0.9818512 1.017796 0.5016583 0.9818513 0.5068189 4.99785e-4 0.9818514 1.015818 0.9995002 0.01814854 1.017796 0.5026349 0.01814866 0.5056549 4.99547e-4 0.01814878 1.015818 -0.01779574 0.9818514 0.497322 0.5053591 0.02036959 0.4993188 -0.01779586 0.01814866 0.4973223 0.5068189 0.9818513 0.4983417 0.9995004 0.9818512 1.017796 0.5016583 0.9818513 0.5068189 4.99785e-4 0.9818514 1.015818 0.9995002 0.01814854 1.017796 0.5026349 0.01814866 0.5056549 4.99547e-4 0.01814878 1.015818 -0.01779574 0.9818514 0.497322 0.5053591 0.02036959 0.4993188 -0.01779586 0.01814866 0.4973223 0.5068189 0.9818513 0.4983417 0.9995004 0.9818512 1.017796 0.5016583 0.9818513 0.5068189 4.99785e-4 0.9818514 1.015818 0.9995002 0.01814854 1.017796 0.5026349 0.01814866 0.5056549 4.99547e-4 0.01814878 1.015818 -0.01779574 0.9818514 0.497322 0.5053591 0.02036959 0.4993188 -0.01779586 0.01814866 0.4973223 0.5068189 0.9818513 0.4983417 0.9995004 0.9818512 1.017796 0.5016583 0.9818513 0.5068189 4.99785e-4 0.9818514 1.015818 0.9995002 0.01814854 1.017796 0.5026349 0.01814866 0.5056549 4.99547e-4 0.01814878 1.015818 -0.01779574 0.9818514 0.497322 0.5053591 0.02036959 0.4993188 -0.01779586 0.01814866 0.4973223 0.5068189 0.9818513 0.4983417 0.9995004 0.9818512 1.017796 0.5016583 0.9818513 0.5068189 4.99785e-4 0.9818514 1.015818 0.9995002 0.01814854 1.017796 0.5026349 0.01814866 0.5056549 4.99547e-4 0.01814878 1.015818 -0.01779574 0.9818514 0.497322 0.5053591 0.02036959 0.4993188 -0.01779586 0.01814866 0.4973223 0.5068189 0.9818513 0.4983417</float_array>
+          <technique_common>
+            <accessor source="#geom-Plane03-map1-array" count="50" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-Plane03-vertices">
+          <input semantic="POSITION" source="#geom-Plane03-positions"/>
+        </vertices>
+        <triangles material="FiddleLeaf_1" count="30">
+          <input semantic="VERTEX" source="#geom-Plane03-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-Plane03-normals" offset="1"/>
+          <input semantic="COLOR" source="#geom-Plane03-map0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-Plane03-map1" offset="3" set="1"/>
+          <p>0 1 1 0 1 2 2 1 4 3 3 4 4 3 3 4 3 0 0 3 0 1 1 0 1 2 5 1 2 4 6 2 5 5 7 5 5 5 7 5 4 3 4 4 1 2 5 1 1 2 9 9 6 7 10 6 8 8 11 8 8 8 11 8 7 6 8 7 1 2 9 9 9 10 13 10 10 11 14 11 13 12 15 14 13 12 15 14 12 9 12 13 9 10 13 10 10 11 17 11 11 13 18 12 14 14 19 15 14 14 19 15 13 12 16 14 10 11 17 11 10 11 21 19 15 16 22 16 17 17 23 18 17 17 23 18 16 15 20 17 10 11 21 19 18 19 25 20 19 20 26 21 22 21 27 24 22 21 27 24 21 18 24 23 18 19 25 20 19 20 29 21 20 22 30 22 23 23 31 25 23 23 31 25 22 21 28 24 19 20 29 21 19 20 33 29 24 25 34 26 26 26 35 28 26 26 35 28 25 24 32 27 19 20 33 29 27 28 37 30 28 29 38 31 31 30 39 34 31 30 39 34 30 27 36 33 27 28 37 30 28 29 41 31 29 31 42 32 32 32 43 35 32 32 43 35 31 30 40 34 28 29 41 31 28 29 45 39 33 34 46 36 35 35 47 38 35 35 47 38 34 33 44 37 28 29 45 39 36 37 49 40 37 38 50 41 40 39 51 44 40 39 51 44 39 36 48 43 36 37 49 40 37 38 53 41 38 40 54 42 41 41 55 45 41 41 55 45 40 39 52 44 37 38 53 41 37 38 57 49 42 43 58 46 44 44 59 48 44 44 59 48 43 42 56 47 37 38 57 49</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_lights>
+    <light id="EnvironmentAmbientLight" name="EnvironmentAmbientLight">
+      <technique_common>
+        <ambient>
+          <color>0 0 0</color>
+        </ambient>
+      </technique_common>
+    </light>
+  </library_lights>
+  <library_images>
+    <image id="Fiddle_leaf_png">
+      <init_from>file:///C:/Users/Owner/Documents/3dsmax/sceneassets/images/Fiddle_leaf.png</init_from>
+    </image>
+  </library_images>
+  <library_visual_scenes>
+    <visual_scene id="MaxScene">
+      <node name="EnvironmentAmbientLight">
+        <instance_light url="#EnvironmentAmbientLight"/>
+      </node>
+      <node id="node-Plane03" name="Plane03">
+        <translate>0.08026886 0.03927803 0.0711565</translate>
+        <scale>0.2718994 0.2718994 0.2718994</scale>
+        <instance_geometry url="#geom-Plane03">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="FiddleLeaf_1" target="#FiddleLeaf-material">
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="1"/>
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="1"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#MaxScene"/>
+  </scene>
+</COLLADA>

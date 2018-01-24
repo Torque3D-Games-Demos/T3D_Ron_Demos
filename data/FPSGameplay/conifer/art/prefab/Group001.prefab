@@ -1,0 +1,103 @@
+//--- OBJECT WRITE BEGIN ---
+$ThisPrefab = new SimGroup() {
+   canSave = "1";
+   canSaveDynamicFields = "1";
+
+   new TSStatic() {
+      shapeName = "data/FPSGameplay/conifer/art/shapes/rocks/overrock.DAE";
+      playAmbient = "1";
+      meshCulling = "1";
+      originSort = "0";
+      collisionType = "Visible Mesh";
+      decalType = "Visible Mesh";
+      allowPlayerStep = "0";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "0.276489 8.17733 1.89951";
+      rotation = "-0.0549495 0.0430606 0.99756 175.644";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new TSStatic() {
+      shapeName = "data/FPSGameplay/conifer/art/shapes/rocks/overrock.DAE";
+      playAmbient = "1";
+      meshCulling = "1";
+      originSort = "1";
+      collisionType = "Visible Mesh";
+      decalType = "Visible Mesh";
+      allowPlayerStep = "0";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "3.99451 -0.959671 0.79451";
+      rotation = "0 0 1 81.8507";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new TSStatic() {
+      shapeName = "data/FPSGameplay/conifer/art/shapes/rocks/overrock.DAE";
+      playAmbient = "1";
+      meshCulling = "1";
+      originSort = "0";
+      collisionType = "Visible Mesh";
+      decalType = "Visible Mesh";
+      allowPlayerStep = "0";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "4.3335 13.7153 -1.02649";
+      rotation = "0.30826 -0.58124 0.753084 103.973";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new TSStatic() {
+      shapeName = "data/FPSGameplay/conifer/art/shapes/rocks/overrock.DAE";
+      playAmbient = "1";
+      meshCulling = "1";
+      originSort = "1";
+      collisionType = "Visible Mesh";
+      decalType = "Visible Mesh";
+      allowPlayerStep = "0";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "7.64551 -4.41867 -2.19049";
+      rotation = "0.596747 0.294425 0.746463 143.108";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new TSStatic() {
+      shapeName = "data/FPSGameplay/conifer/art/shapes/rocks/ThreeStones01.DAE";
+      playAmbient = "1";
+      meshCulling = "1";
+      originSort = "0";
+      collisionType = "Visible Mesh";
+      decalType = "Visible Mesh";
+      allowPlayerStep = "0";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "-9.88452 -10.1917 -0.417496";
+      rotation = "0.164103 -0.106451 0.980683 167.36";
+      scale = "0.533975 0.533975 0.533975";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new TSStatic() {
+      shapeName = "data/FPSGameplay/conifer/art/shapes/rocks/overrock.DAE";
+      playAmbient = "1";
+      meshCulling = "1";
+      originSort = "0";
+      collisionType = "Visible Mesh";
+      decalType = "Visible Mesh";
+      allowPlayerStep = "0";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "-6.36554 -6.32267 0.940506";
+      rotation = "0.621333 0.0466879 -0.782155 37.6021";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+};
+//--- OBJECT WRITE END ---

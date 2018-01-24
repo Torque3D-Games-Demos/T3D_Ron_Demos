@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Owner</author>
+      <authoring_tool>OpenCOLLADA for 3ds Max;  Version: 1.2.5;  Revision: 673;  Platform: Win32;  Configuration: Release Max9</authoring_tool>
+      <source_data>file:///C:/Users/Owner/Documents/3dsmax/scenes/TORQUE/TREES/Pine_Trees/Dead_Pine_001.max</source_data>
+    </contributor>
+    <created>2010-12-17T06:50:26</created>
+    <modified>2010-12-17T06:50:26</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="ColorEffectR87G224B143">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <ambient>
+              <color>0.3411765 0.8784314 0.5607843 1</color>
+            </ambient>
+            <diffuse>
+              <color>0.3411765 0.8784314 0.5607843 1</color>
+            </diffuse>
+            <specular>
+              <color>1 1 1 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent>
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="rotpine">
+      <profile_COMMON>
+        <newparam sid="rotPine_jpg-surface">
+          <surface type="2D">
+            <init_from>rotPine_jpg</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="rotPine_jpg-sampler">
+          <sampler2D>
+            <source>rotPine_jpg-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.5882353 0.5882353 0.5882353 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="rotPine_jpg-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0.9 0.9 0.9 1</color>
+            </specular>
+            <shininess>
+              <float>9.999999</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <apply_reflection_dimming>0</apply_reflection_dimming>
+            <dim_level>0</dim_level>
+            <falloff_type>0</falloff_type>
+            <index_of_refraction>1.5</index_of_refraction>
+            <opacity_type>0</opacity_type>
+            <reflection_level>3</reflection_level>
+            <wire_size>1</wire_size>
+            <wire_units>0</wire_units>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_lock>1</ambient_diffuse_lock>
+            <ambient_diffuse_texture_lock>1</ambient_diffuse_texture_lock>
+            <diffuse_specular_lock>0</diffuse_specular_lock>
+            <soften>0.1</soften>
+            <use_self_illum_color>0</use_self_illum_color>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="deadwood">
+      <profile_COMMON>
+        <newparam sid="_64bois_jpg-surface">
+          <surface type="2D">
+            <init_from>_64bois_jpg</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="_64bois_jpg-sampler">
+          <sampler2D>
+            <source>_64bois_jpg-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.5882353 0.5882353 0.5882353 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="_64bois_jpg-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0.9 0.9 0.9 1</color>
+            </specular>
+            <shininess>
+              <float>9.999999</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <apply_reflection_dimming>0</apply_reflection_dimming>
+            <dim_level>0</dim_level>
+            <falloff_type>0</falloff_type>
+            <index_of_refraction>1.5</index_of_refraction>
+            <opacity_type>0</opacity_type>
+            <reflection_level>3</reflection_level>
+            <wire_size>1</wire_size>
+            <wire_units>0</wire_units>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_lock>1</ambient_diffuse_lock>
+            <ambient_diffuse_texture_lock>1</ambient_diffuse_texture_lock>
+            <diffuse_specular_lock>0</diffuse_specular_lock>
+            <soften>0.1</soften>
+            <use_self_illum_color>0</use_self_illum_color>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="deadpine21">
+      <profile_COMMON>
+        <newparam sid="tree_004_barebranch_png-surface">
+          <surface type="2D">
+            <init_from>tree_004_barebranch_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="tree_004_barebranch_png-sampler">
+          <sampler2D>
+            <source>tree_004_barebranch_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.5882353 0.5882353 0.5882353 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="tree_004_barebranch_png-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0.9 0.9 0.9 1</color>
+            </specular>
+            <shininess>
+              <float>9.999999</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="RGB_ZERO">
+              <texture texture="tree_004_barebranch_png-sampler" texcoord="CHANNEL1"/>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <apply_reflection_dimming>0</apply_reflection_dimming>
+            <dim_level>0</dim_level>
+            <falloff_type>0</falloff_type>
+            <index_of_refraction>1.5</index_of_refraction>
+            <opacity_type>0</opacity_type>
+            <reflection_level>3</reflection_level>
+            <wire_size>1</wire_size>
+            <wire_units>0</wire_units>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_lock>1</ambient_diffuse_lock>
+            <ambient_diffuse_texture_lock>1</ambient_diffuse_texture_lock>
+            <diffuse_specular_lock>0</diffuse_specular_lock>
+            <soften>0.1</soften>
+            <use_self_illum_color>0</use_self_illum_color>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="ColorEffectR87G224B143-material" name="ColorEffectR87G224B143-material">
+      <instance_effect url="#ColorEffectR87G224B143"/>
+    </material>
+    <material id="rotpine-material" name="rotpine">
+      <instance_effect url="#rotpine"/>
+    </material>
+    <material id="deadwood-material" name="deadwood">
+      <instance_effect url="#deadwood"/>
+    </material>
+    <material id="deadpine21-material" name="deadpine21">
+      <instance_effect url="#deadpine21"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="geom-Col-01" name="Col-01">
+      <mesh>
+        <source id="geom-Col-01-positions">
+          <float_array id="geom-Col-01-positions-array" count="24">-448.8795 -411.1373 -859.233 437.7512 -411.1373 -859.233 -448.8795 464.3057 -859.233 437.7512 464.3057 -859.233 -448.8794 -411.1371 8478.278 437.7512 -411.1371 7565.995 -448.8794 464.3059 8478.278 437.7512 464.3059 7565.995</float_array>
+          <technique_common>
+            <accessor source="#geom-Col-01-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Col-01-normals">
+          <float_array id="geom-Col-01-normals-array" count="72">0 0 -0.9999999 0 0 -1 0 0 -0.9999999 0 0 -1 0.7171175 0 0.6969523 0.7171175 0 0.6969523 0.7171175 0 0.6969523 0.7171175 0 0.6969523 3.64431e-9 -1 2.49717e-8 0 -1 2.53552e-8 5.21818e-8 -1 1.98638e-8 5.45968e-8 -1 1.96097e-8 0.9999999 3.25619e-8 3.86091e-9 1 3.48596e-8 3.62217e-9 0.9999999 2.29769e-9 7.00559e-9 1 0 7.24433e-9 -3.64677e-9 0.9999999 -1.99559e-8 0 1 -1.96097e-8 -5.30801e-8 1 -2.46498e-8 -6.05085e-8 1 -2.53552e-8 -1 0 6.53655e-9 -1 0 6.53655e-9 -1 0 6.53655e-9 -1 0 6.53655e-9</float_array>
+          <technique_common>
+            <accessor source="#geom-Col-01-normals-array" count="24" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Col-01-map1">
+          <float_array id="geom-Col-01-map1-array" count="72">1 0 0 0 0 0 1 1 0 0 1 0 0 0 0 1 0 0 0 1 0 1 1 0 0 0 0 1 0 0 0 1 0 1 1 0 0 0 0 1 0 0 0 1 0 1 1 0 0 0 0 1 0 0 0 1 0 1 1 0 0 0 0 1 0 0 0 1 0 1 1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Col-01-map1-array" count="24" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-Col-01-vertices">
+          <input semantic="POSITION" source="#geom-Col-01-positions"/>
+        </vertices>
+        <triangles material="ColorMaterial" count="12">
+          <input semantic="VERTEX" source="#geom-Col-01-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-Col-01-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#geom-Col-01-map1" offset="2" set="1"/>
+          <p>0 0 0 2 1 2 3 2 3 3 2 3 1 3 1 0 0 0 4 4 4 5 5 5 7 6 7 7 6 7 6 7 6 4 4 4 0 8 8 1 9 9 5 10 11 5 10 11 4 11 10 0 8 8 1 12 12 3 13 13 7 14 15 7 14 15 5 15 14 1 12 12 3 16 16 2 17 17 6 18 19 6 18 19 7 19 18 3 16 16 2 20 20 0 21 21 4 22 23 4 22 23 6 23 22 2 20 20</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-FallenPine" name="FallenPine">
+      <mesh>
+        <source id="geom-FallenPine-positions">
+          <float_array id="geom-FallenPine-positions-array" count="96">0.7 0 0 0.5880935 0.6660906 0 -3.0598e-8 0.7 0 -0.6346661 0.8640683 2.1656e-8 -0.7 -6.11959e-8 0 -0.6034717 -0.7271776 0 8.34742e-9 -0.7 0 0.697274 -0.6335942 0 0.5399982 1.45249e-7 3.222625 0.3818364 0.3818366 3.222625 -2.31974e-8 0.5399984 3.222625 -0.3818364 0.3818365 3.222625 -0.5399982 9.80409e-8 3.222625 -0.3818363 -0.3818363 3.222625 6.84606e-9 -0.539998 3.222625 0.3818363 -0.3818363 3.222625 0.4686272 1.52353e-7 11.07492 0.3313694 0.3313696 11.07492 -2.0798e-8 0.4686273 11.07492 -0.3313694 0.3313695 11.07492 -0.4686272 1.11385e-7 11.07492 -0.3313694 -0.3313693 11.07492 5.27464e-9 -0.4686269 11.07492 0.3313694 -0.3313693 11.07492 0.4686272 2.26955e-7 13.83145 0.3313694 0.3313696 13.96166 -2.0798e-8 0.4686274 14.86371 -0.3313694 0.3313695 14.99952 -0.4686272 1.26368e-7 15.19536 -0.3313694 -0.3313693 14.99952 5.27464e-9 -0.4686269 14.53792 0.3313694 -0.3313693 13.96166</float_array>
+          <technique_common>
+            <accessor source="#geom-FallenPine-positions-array" count="32" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-FallenPine-normals">
+          <float_array id="geom-FallenPine-normals-array" count="144">0.9940095 0.08960254 0.06258222 0.6715246 0.7362893 0.08326384 0.7132477 0.6993247 0.04714609 0.9988053 0.01212808 0.04733701 0.1303273 0.9878079 0.08514994 -0.009785244 0.9989825 0.04402575 -0.5588567 0.8176186 0.1384881 -0.6962584 0.7155448 0.05674274 -0.9971588 -0.03845071 0.06477588 -0.9987282 -0.01352508 0.04856915 -0.6465167 -0.7573385 0.0919484 -0.7153051 -0.6968289 0.05261212 0.08151471 -0.9944421 0.06663527 0.01297006 -0.9987304 0.04867656 0.7276131 -0.6794481 0.09449628 0.6974739 -0.7147517 0.05157449 0.7070993 0.7070996 0.004549491 0.9999896 1.33337e-7 0.004549496 -2.41032e-7 0.9999896 0.004549495 -0.7070996 0.7070993 0.004549495 -0.9999896 -2.08339e-7 0.004549496 -0.7070992 -0.7070998 0.004549493 1.40389e-7 -0.9999896 0.0045495 0.7070995 -0.7070995 0.004549506 0.5864271 0.810002 -1.74482e-8 1 -1.68094e-8 -1.23918e-9 -0.2683453 0.9633228 -9.09079e-9 -0.7794684 0.6264415 -2.66513e-9 -0.9999999 -1.50594e-8 6.92064e-10 -0.8393419 -0.5436039 -8.31148e-10 -0.2537937 -0.9672584 -7.55779e-9 0.5958018 -0.8031315 -2.12338e-9 0 0 -1 0 0 -1 -6.56007e-9 6.56007e-9 -1 -2.71129e-8 2.71129e-8 -1 -8.43677e-9 8.43677e-9 -1 0 0 -1 0 0 -1 0 0 -1 0.8074093 -0.09626549 0.5820852 0.4670345 -0.8324281 0.2982317 0.8165579 -0.2205705 0.533462 0.8188968 3.68245e-8 0.5739408 0.8366205 0.02190472 0.5473448 0.8223044 0.2192973 0.5250944 0.8118887 0.0200644 0.5834673 0.6882328 -3.09487e-8 0.7254899</float_array>
+          <technique_common>
+            <accessor source="#geom-FallenPine-normals-array" count="48" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-FallenPine-map1">
+          <float_array id="geom-FallenPine-map1-array" count="210">0.4570291 -0.8875011 0.9995005 0.8752078 -0.8875011 0.9196472 0.4999999 -0.8875011 0.8964965 0.9528799 -0.8875011 0.9995005 0.5429707 -0.8875011 4.99547e-4 0.9995005 -0.8875011 0.06937933 0.4999999 -0.8875011 0.01756185 0.9975551 -0.8875011 0.05925199 0.4570292 -0.3313866 0.8853276 0.6967502 -0.3313866 0.7724679 0.4999999 -0.3313866 0.7960458 0.7724677 -0.3313866 0.6967502 0.5429707 -0.3313866 0.1146724 0.7826916 -0.3313866 0.2275322 0.4999999 -0.3313866 0.1180128 0.7724677 -0.3313866 0.2173083 0.4570292 1.02365 0.8343992 0.6650664 1.02365 0.736456 0.4999999 1.02365 0.7512383 0.7364559 1.02365 0.6650665 0.5429707 1.02365 0.1656007 0.7510079 1.02365 0.263544 0.4999999 1.02365 0.1628203 0.7364559 1.02365 0.248992 0.4570293 1.499334 0.8343992 0.6650665 1.521803 0.736456 0.4999999 1.677465 0.7512383 0.7364559 1.700902 0.6650665 0.5429707 1.734697 0.1656007 0.7510079 1.700902 0.263544 0.4999999 1.621244 0.1628203 0.7364559 1.521803 0.2489921 0.08035281 -0.8875011 0.8752078 0.2275321 -0.3313866 0.6967502 4.99517e-4 -0.8875011 0.04712009 0.3032498 -0.3313866 0.2275323 0.06937933 -0.8875011 4.99547e-4 0.2275322 -0.3313866 0.2173084 0.05925199 -0.8875011 0.9975551 0.2173083 -0.3313866 0.7724677 0.2275321 -0.3313866 0.6967502 0.263544 1.02365 0.6650664 0.3032498 -0.3313866 0.2275323 0.3349335 1.02365 0.2635441 0.2275322 -0.3313866 0.2173084 0.263544 1.02365 0.2489921 0.2173083 -0.3313866 0.7724677 0.248992 1.02365 0.7364559 0.263544 1.02365 0.6650664 0.263544 1.521803 0.6650665 0.3349335 1.02365 0.2635441 0.3349335 1.700902 0.2635441 0.263544 1.02365 0.2489921 0.263544 1.700902 0.2489921 0.248992 1.02365 0.7364559 0.2489921 1.521803 0.7364559 0.002444834 0.05925199 -0.8875011 0.5000001 0.01756185 -0.8875011 0.9306207 4.99547e-4 -0.8875011 0.9995005 0.4570293 -0.8875011 0.9528799 0.9995005 -0.8875011 0.4999999 0.8964965 -0.8875011 0.08035281 0.8752078 -0.8875011 4.99547e-4 0.4570291 -0.8875011 0.7512383 1.677465 0.5000001 0.6650665 1.700902 0.2635441 0.4570293 1.734697 0.1656007 0.2489921 1.700902 0.263544 0.1628203 1.621244 0.4999999 0.2489921 1.521803 0.7364559</float_array>
+          <technique_common>
+            <accessor source="#geom-FallenPine-map1-array" count="70" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-FallenPine-vertices">
+          <input semantic="POSITION" source="#geom-FallenPine-positions"/>
+        </vertices>
+        <triangles material="rotpine_1" count="54">
+          <input semantic="VERTEX" source="#geom-FallenPine-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-FallenPine-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#geom-FallenPine-map1" offset="2" set="1"/>
+          <p>0 0 0 1 1 1 9 2 9 9 2 9 8 3 8 0 0 0 1 1 32 2 4 2 10 5 10 10 5 10 9 2 33 1 1 32 2 4 2 3 6 3 11 7 11 11 7 11 10 5 10 2 4 2 3 6 34 4 8 4 12 9 12 12 9 12 11 7 35 3 6 34 4 8 4 5 10 5 13 11 13 13 11 13 12 9 12 4 8 4 5 10 36 6 12 6 14 13 14 14 13 14 13 11 37 5 10 36 6 12 6 7 14 7 15 15 15 15 15 15 14 13 14 6 12 6 7 14 38 0 0 0 8 3 8 8 3 8 15 15 39 7 14 38 8 3 8 9 2 9 17 16 17 17 16 17 16 17 16 8 3 8 9 2 40 10 5 10 18 18 18 18 18 18 17 16 41 9 2 40 10 5 10 11 7 11 19 19 19 19 19 19 18 18 18 10 5 10 11 7 42 12 9 12 20 20 20 20 20 20 19 19 43 11 7 42 12 9 12 13 11 13 21 21 21 21 21 21 20 20 20 12 9 12 13 11 44 14 13 14 22 22 22 22 22 22 21 21 45 13 11 44 14 13 14 15 15 15 23 23 23 23 23 23 22 22 22 14 13 14 15 15 46 8 3 8 16 17 16 16 17 16 23 23 47 15 15 46 16 17 16 17 16 17 25 24 25 25 24 25 24 25 24 16 17 16 17 16 48 18 18 18 26 26 26 26 26 26 25 24 49 17 16 48 18 18 18 19 19 19 27 27 27 27 27 27 26 26 26 18 18 18 19 19 50 20 20 20 28 28 28 28 28 28 27 27 51 19 19 50 20 20 20 21 21 21 29 29 29 29 29 29 28 28 28 20 20 20 21 21 52 22 22 22 30 30 30 30 30 30 29 29 53 21 21 52 22 22 22 23 23 23 31 31 31 31 31 31 30 30 30 22 22 22 23 23 54 16 17 16 24 25 24 24 25 24 31 31 55 23 23 54 6 32 57 5 33 58 4 34 59 4 34 59 3 35 60 2 36 61 2 36 61 1 37 62 0 38 63 4 34 59 2 36 61 0 38 63 6 32 57 4 34 59 0 38 63 7 39 56 6 32 57 0 38 63</p>
+        </triangles>
+        <triangles material="deadwood_1" count="6">
+          <input semantic="VERTEX" source="#geom-FallenPine-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-FallenPine-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#geom-FallenPine-map1" offset="2" set="1"/>
+          <p>25 40 25 26 41 64 27 42 65 27 42 65 28 43 66 29 44 67 29 44 67 30 45 68 31 46 69 27 42 65 29 44 67 31 46 69 25 40 25 27 42 65 31 46 69 24 47 24 25 40 25 31 46 69</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-Branc" name="Branc">
+      <mesh>
+        <source id="geom-Branc-positions">
+          <float_array id="geom-Branc-positions-array" count="288">-0.8494357 0.05509174 -0.5230485 -0.6942813 -1.04155 -0.7083908 -0.5418363 -2.119042 -1.009305 -0.395143 -3.155879 -1.55558 -0.1606541 0.06177509 0.01400173 -0.005499795 -1.034866 -0.1713407 0.1469452 -2.112358 -0.4722553 0.2936385 -3.149196 -1.01853 0.08554898 0.09660828 0.01400173 0.2407033 -1.000033 -0.1713407 0.3931484 -2.077525 -0.4722553 0.5398415 -3.114363 -1.01853 0.8121787 0.2977594 -0.5678995 0.9673331 -0.798882 -0.7532419 1.119778 -1.876374 -1.054157 1.266471 -2.913212 -1.600431 0.449092 -0.08499146 -0.4347235 1.369625 -0.08499134 -0.5887679 2.274084 -0.08499122 -0.8388683 3.144418 -0.08499122 -1.292896 0.523787 0.4826118 0.01163733 1.44432 0.4826118 -0.1424071 2.348779 0.482612 -0.3925075 3.219113 0.482612 -0.846535 0.5237871 0.6892773 0.01163733 1.44432 0.6892773 -0.1424071 2.348779 0.6892775 -0.3925076 3.219112 0.6892775 -0.846535 0.4428537 1.310669 -0.4720007 1.363387 1.310669 -0.6260451 2.267846 1.31067 -0.8761455 3.138179 1.31067 -1.330173 0.8205549 0.6434215 1.056306 1.440301 1.32408 0.902261 2.049226 1.992853 0.6521607 2.635175 2.636393 0.1981332 0.4511476 1.08079 1.502666 1.070894 1.761448 1.348622 1.679819 2.430221 1.098521 2.265768 3.073761 0.6444939 0.2983354 1.219927 1.502666 0.918082 1.900586 1.348622 1.527007 2.569358 1.098521 2.112956 3.212898 0.644494 -0.2156208 1.578434 1.019028 0.4041259 2.259092 0.8649838 1.01305 2.927865 0.6148834 1.599 3.571405 0.1608559 0.7533115 -0.05588603 3.134252 1.901762 0.4599241 2.923573 3.030159 0.9667267 2.581523 4.11598 1.454408 1.960572 0.5284512 0.694106 3.744717 1.676902 1.209916 3.534038 2.805298 1.716719 3.191988 3.89112 2.2044 2.571038 0.4126484 0.9519409 3.744717 1.561099 1.467751 3.534038 2.689496 1.974553 3.191988 3.775318 2.462234 2.571037 -0.03651291 1.681835 3.08327 1.111938 2.197645 2.872591 2.240335 2.704448 2.530541 3.326156 3.192129 1.90959 -0.3317777 -0.5177376 5.96656 1.363521 -1.476293 5.640656 3.029216 -2.418109 5.111531 4.632063 -3.32439 4.150966 0.3968318 0.449807 6.910904 2.09213 -0.5087479 6.585 3.757825 -1.450565 6.055875 5.360673 -2.356846 5.09531 0.6120334 0.830412 6.910904 2.307332 -0.1281426 6.585 3.973027 -1.069959 6.055875 5.575875 -1.976241 5.09531 1.11004 2.059073 5.887695 2.805339 1.100519 5.56179 4.471034 0.158702 5.032665 6.073881 -0.7475795 4.072101 1.066463 0.04141259 7.972635 2.253058 1.644402 7.690418 3.418933 3.219399 7.232222 4.540819 4.734972 6.40042 0.1743408 0.9031419 8.79039 1.360936 2.506131 8.508173 2.52681 4.081129 8.049976 3.648696 5.596701 7.218176 -0.1855406 1.16954 8.79039 1.001054 2.772529 8.508173 2.166929 4.347527 8.049976 3.288815 5.863099 7.218175 -1.371939 1.829597 7.904341 -0.1853441 3.432587 7.622124 0.9805304 5.007585 7.163928 2.102416 6.523156 6.332126</float_array>
+          <technique_common>
+            <accessor source="#geom-Branc-positions-array" count="96" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Branc-normals">
+          <float_array id="geom-Branc-normals-array" count="288">-0.5991964 -0.2151087 0.7711627 -0.592944 -0.2554646 0.7636461 -0.2948169 -0.2475506 0.9229311 -0.3051577 -0.2005136 0.9309528 -0.5666783 -0.3791898 0.7314991 -0.2676519 -0.3855731 0.8830038 -0.5465297 -0.4495724 0.7065337 -0.2728549 -0.4783739 0.8346906 0.3496368 -0.1565486 0.9237136 0.3464731 -0.1084579 0.9317688 0.3618903 -0.2967968 0.8837121 0.3923367 -0.384695 0.8355128 0.6367322 -0.08216746 0.7666946 0.6315229 -0.04150583 0.7742455 0.6458726 -0.2087483 0.7343519 0.6460629 -0.2822397 0.7091851 0.1290484 -0.6234216 0.7711627 0.1698823 -0.6228842 0.7636461 0.2038098 -0.3265882 0.922931 0.1557881 -0.330238 0.9309527 0.2960669 -0.6142095 0.7314992 0.3442768 -0.3190259 0.883004 0.368578 -0.6041191 0.706534 0.4354337 -0.3371777 0.8346908 0.2039842 0.3242588 0.9237136 0.1559247 0.3278631 0.931769 0.344566 0.3167446 0.8837121 0.4358627 0.3345775 0.8355128 0.1705545 0.618943 0.7666947 0.1295643 0.6194812 0.7742456 0.2971679 0.6102608 0.734352 0.3699614 0.6001542 0.7091851 0.5478503 -0.3242962 0.7711627 0.5749442 -0.2937411 0.7636461 0.3786997 -0.06917435 0.922931 0.3490675 -0.1071396 0.9309528 0.6534834 -0.1945979 0.7314991 0.4676768 0.0397806 0.883004 0.6948408 -0.1341886 0.7065336 0.5424701 0.09496286 0.8346905 -0.1024306 0.3691358 0.9237135 -0.1374519 0.3360263 0.931769 -0.002228136 0.4680254 0.8837122 0.04605121 0.5475374 0.8355131 -0.3428318 0.5428129 0.7666945 -0.3708261 0.5128661 0.7742456 -0.2511705 0.6305877 0.7343519 -0.1946895 0.6776078 0.7091852 0.3731414 -0.5158232 0.7711627 0.4101706 -0.4986029 0.763646 0.3197249 -0.2144168 0.9229309 0.2774137 -0.2374208 0.9309527 0.5217239 -0.4389908 0.7314993 0.4447624 -0.1499675 0.883004 0.5837362 -0.4000778 0.7065336 0.5353545 -0.129178 0.8346907 0.05322641 0.3793679 0.9237137 0.007908416 0.3629658 0.931769 0.1845458 0.4301112 0.8837122 0.2605217 0.4837837 0.8355129 -0.09800348 0.6344876 0.7666947 -0.1356164 0.6181844 0.7742456 0.02105232 0.6784422 0.7343521 0.09159631 0.6990467 0.7091853 -0.1945074 -0.6061971 0.7711627 -0.1586975 -0.6258273 0.7636461 0.01667013 -0.3846042 0.9229311 -0.02692854 -0.3641455 0.9309527 -0.04458563 -0.6803833 0.731499 0.1426669 -0.4471582 0.8830038 0.02350087 -0.7072892 0.7065336 0.2130838 -0.5078259 0.8346904 0.3371629 0.1818642 0.9237135 0.2971016 0.2086562 0.9317689 0.4558392 0.1061299 0.883712 0.544089 0.07671785 0.8355128 0.4531038 0.4548368 0.7666945 0.4176869 0.4754805 0.7742454 0.5590457 0.3849616 0.7343517 0.6174371 0.3403357 0.7091849 0.5195598 -0.2402379 0.8199655 0.5415497 -0.2114668 0.8136373 0.3388334 -0.03163011 0.9403145 0.3175213 -0.06853212 0.9457715 0.6069207 -0.1175789 0.7860168 0.4104538 0.07195451 0.909038 0.6437266 -0.05770679 0.7630767 0.469389 0.131734 0.8731095 -0.1273128 0.3135855 0.9409865 -0.1563371 0.2823615 0.9464833 -0.04913647 0.4124306 0.9096628 -0.00894878 0.4861986 0.8738026 -0.3569122 0.4542236 0.8162687 -0.3780784 0.4246948 0.8226123 -0.2860123 0.5444328 0.7885366 -0.2393665 0.5973024 0.7654629</float_array>
+          <technique_common>
+            <accessor source="#geom-Branc-normals-array" count="96" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Branc-map1">
+          <float_array id="geom-Branc-map1-array" count="288">4.99576e-4 0.09298453 0.04743248 0.3334998 0.09298438 0.04743248 0.6665 0.09298426 -0.04995918 0.9995003 0.09298411 -0.3541136 4.99636e-4 0.426535 0.5 0.3334998 0.4265348 0.5 0.6665001 0.4265347 0.4026083 0.9995003 0.4265346 0.09845394 4.99636e-4 0.5479815 0.5 0.3334999 0.5479814 0.5 0.6665001 0.5479813 0.4026083 0.9995003 0.5479811 0.09845394 4.99696e-4 0.9131409 0.009636968 0.3334999 0.9131407 0.009636968 0.6665002 0.9131407 -0.08775473 0.9995004 0.9131405 -0.3919092 4.99576e-4 0.09298453 0.04743248 0.3334998 0.09298438 0.04743248 0.6665 0.09298426 -0.04995918 0.9995003 0.09298411 -0.3541136 4.99636e-4 0.426535 0.5 0.3334998 0.4265348 0.5 0.6665001 0.4265347 0.4026083 0.9995003 0.4265346 0.09845394 4.99636e-4 0.5479815 0.5 0.3334999 0.5479814 0.5 0.6665001 0.5479813 0.4026083 0.9995003 0.5479811 0.09845394 4.99696e-4 0.9131409 0.009636968 0.3334999 0.9131407 0.009636968 0.6665002 0.9131407 -0.08775473 0.9995004 0.9131405 -0.3919092 4.99576e-4 0.09298453 0.04743248 0.3334998 0.09298438 0.04743248 0.6665 0.09298426 -0.04995918 0.9995003 0.09298411 -0.3541136 4.99636e-4 0.426535 0.5 0.3334998 0.4265348 0.5 0.6665001 0.4265347 0.4026083 0.9995003 0.4265346 0.09845394 4.99636e-4 0.5479815 0.5 0.3334999 0.5479814 0.5 0.6665001 0.5479813 0.4026083 0.9995003 0.5479811 0.09845394 4.99696e-4 0.9131409 0.009636968 0.3334999 0.9131407 0.009636968 0.6665002 0.9131407 -0.08775473 0.9995004 0.9131405 -0.3919092 4.99576e-4 0.09298453 0.04743248 0.3334998 0.09298438 0.04743248 0.6665 0.09298426 -0.04995918 0.9995003 0.09298411 -0.3541136 4.99636e-4 0.426535 0.5 0.3334998 0.4265348 0.5 0.6665001 0.4265347 0.4026083 0.9995003 0.4265346 0.09845394 4.99636e-4 0.5479815 0.5 0.3334999 0.5479814 0.5 0.6665001 0.5479813 0.4026083 0.9995003 0.5479811 0.09845394 4.99696e-4 0.9131409 0.009636968 0.3334999 0.9131407 0.009636968 0.6665002 0.9131407 -0.08775473 0.9995004 0.9131405 -0.3919092 4.99576e-4 0.09298453 0.04743248 0.3334998 0.09298438 0.04743248 0.6665 0.09298426 -0.04995918 0.9995003 0.09298411 -0.3541136 4.99636e-4 0.426535 0.5 0.3334998 0.4265348 0.5 0.6665001 0.4265347 0.4026083 0.9995003 0.4265346 0.09845394 4.99636e-4 0.5479815 0.5 0.3334999 0.5479814 0.5 0.6665001 0.5479813 0.4026083 0.9995003 0.5479811 0.09845394 4.99696e-4 0.9131409 0.009636968 0.3334999 0.9131407 0.009636968 0.6665002 0.9131407 -0.08775473 0.9995004 0.9131405 -0.3919092 4.99576e-4 0.09298453 0.04743248 0.3334998 0.09298438 0.04743248 0.6665 0.09298426 -0.04995918 0.9995003 0.09298411 -0.3541136 4.99636e-4 0.426535 0.5 0.3334998 0.4265348 0.5 0.6665001 0.4265347 0.4026083 0.9995003 0.4265346 0.09845394 4.99636e-4 0.5479815 0.5 0.3334999 0.5479814 0.5 0.6665001 0.5479813 0.4026083 0.9995003 0.5479811 0.09845394 4.99696e-4 0.9131409 0.009636968 0.3334999 0.9131407 0.009636968 0.6665002 0.9131407 -0.08775473 0.9995004 0.9131405 -0.3919092</float_array>
+          <technique_common>
+            <accessor source="#geom-Branc-map1-array" count="96" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-Branc-vertices">
+          <input semantic="POSITION" source="#geom-Branc-positions"/>
+        </vertices>
+        <triangles material="deadpine21_1" count="108">
+          <input semantic="VERTEX" source="#geom-Branc-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-Branc-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#geom-Branc-map1" offset="2" set="1"/>
+          <p>0 0 0 1 1 1 5 2 5 5 2 5 4 3 4 0 0 0 1 1 1 2 4 2 6 5 6 6 5 6 5 2 5 1 1 1 2 4 2 3 6 3 7 7 7 7 7 7 6 5 6 2 4 2 4 3 4 5 2 5 9 8 9 9 8 9 8 9 8 4 3 4 5 2 5 6 5 6 10 10 10 10 10 10 9 8 9 5 2 5 6 5 6 7 7 7 11 11 11 11 11 11 10 10 10 6 5 6 8 9 8 9 8 9 13 12 13 13 12 13 12 13 12 8 9 8 9 8 9 10 10 10 14 14 14 14 14 14 13 12 13 9 8 9 10 10 10 11 11 11 15 15 15 15 15 15 14 14 14 10 10 10 16 16 16 17 17 17 21 18 21 21 18 21 20 19 20 16 16 16 17 17 17 18 20 18 22 21 22 22 21 22 21 18 21 17 17 17 18 20 18 19 22 19 23 23 23 23 23 23 22 21 22 18 20 18 20 19 20 21 18 21 25 24 25 25 24 25 24 25 24 20 19 20 21 18 21 22 21 22 26 26 26 26 26 26 25 24 25 21 18 21 22 21 22 23 23 23 27 27 27 27 27 27 26 26 26 22 21 22 24 25 24 25 24 25 29 28 29 29 28 29 28 29 28 24 25 24 25 24 25 26 26 26 30 30 30 30 30 30 29 28 29 25 24 25 26 26 26 27 27 27 31 31 31 31 31 31 30 30 30 26 26 26 32 32 32 33 33 33 37 34 37 37 34 37 36 35 36 32 32 32 33 33 33 34 36 34 38 37 38 38 37 38 37 34 37 33 33 33 34 36 34 35 38 35 39 39 39 39 39 39 38 37 38 34 36 34 36 35 36 37 34 37 41 40 41 41 40 41 40 41 40 36 35 36 37 34 37 38 37 38 42 42 42 42 42 42 41 40 41 37 34 37 38 37 38 39 39 39 43 43 43 43 43 43 42 42 42 38 37 38 40 41 40 41 40 41 45 44 45 45 44 45 44 45 44 40 41 40 41 40 41 42 42 42 46 46 46 46 46 46 45 44 45 41 40 41 42 42 42 43 43 43 47 47 47 47 47 47 46 46 46 42 42 42 48 48 48 49 49 49 53 50 53 53 50 53 52 51 52 48 48 48 49 49 49 50 52 50 54 53 54 54 53 54 53 50 53 49 49 49 50 52 50 51 54 51 55 55 55 55 55 55 54 53 54 50 52 50 52 51 52 53 50 53 57 56 57 57 56 57 56 57 56 52 51 52 53 50 53 54 53 54 58 58 58 58 58 58 57 56 57 53 50 53 54 53 54 55 55 55 59 59 59 59 59 59 58 58 58 54 53 54 56 57 56 57 56 57 61 60 61 61 60 61 60 61 60 56 57 56 57 56 57 58 58 58 62 62 62 62 62 62 61 60 61 57 56 57 58 58 58 59 59 59 63 63 63 63 63 63 62 62 62 58 58 58 64 64 64 65 65 65 69 66 69 69 66 69 68 67 68 64 64 64 65 65 65 66 68 66 70 69 70 70 69 70 69 66 69 65 65 65 66 68 66 67 70 67 71 71 71 71 71 71 70 69 70 66 68 66 68 67 68 69 66 69 73 72 73 73 72 73 72 73 72 68 67 68 69 66 69 70 69 70 74 74 74 74 74 74 73 72 73 69 66 69 70 69 70 71 71 71 75 75 75 75 75 75 74 74 74 70 69 70 72 73 72 73 72 73 77 76 77 77 76 77 76 77 76 72 73 72 73 72 73 74 74 74 78 78 78 78 78 78 77 76 77 73 72 73 74 74 74 75 75 75 79 79 79 79 79 79 78 78 78 74 74 74 80 80 80 81 81 81 85 82 85 85 82 85 84 83 84 80 80 80 81 81 81 82 84 82 86 85 86 86 85 86 85 82 85 81 81 81 82 84 82 83 86 83 87 87 87 87 87 87 86 85 86 82 84 82 84 83 84 85 82 85 89 88 89 89 88 89 88 89 88 84 83 84 85 82 85 86 85 86 90 90 90 90 90 90 89 88 89 85 82 85 86 85 86 87 87 87 91 91 91 91 91 91 90 90 90 86 85 86 88 89 88 89 88 89 93 92 93 93 92 93 92 93 92 88 89 88 89 88 89 90 90 90 94 94 94 94 94 94 93 92 93 89 88 89 90 90 90 91 91 91 95 95 95 95 95 95 94 94 94 90 90 90</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_lights>
+    <light id="EnvironmentAmbientLight" name="EnvironmentAmbientLight">
+      <technique_common>
+        <ambient>
+          <color>0 0 0</color>
+        </ambient>
+      </technique_common>
+    </light>
+  </library_lights>
+  <library_images>
+    <image id="_64bois_jpg">
+      <init_from>file:///C:/Users/Owner/Documents/3dsmax/export/images/064bois.jpg</init_from>
+    </image>
+    <image id="rotPine_jpg">
+      <init_from>file:///C:/Users/Owner/Documents/3dsmax/export/images/rotPine.jpg</init_from>
+    </image>
+    <image id="tree_004_barebranch_png">
+      <init_from>file:///C:/Users/Owner/Documents/3dsmax/export/images/tree_004_barebranch.png</init_from>
+    </image>
+  </library_images>
+  <library_visual_scenes>
+    <visual_scene id="MaxScene">
+      <node name="EnvironmentAmbientLight">
+        <instance_light url="#EnvironmentAmbientLight"/>
+      </node>
+      <node id="node-base01" name="base01">
+        <node id="node-Collision-01" name="Collision-01">
+          <translate>3.391954 -0.2679881 -0.4598458</translate>
+          <rotate>0 1 0 -72.47519</rotate>
+          <scale>0.001011833 0.001011833 0.001011833</scale>
+        </node>
+        <node id="node-start01" name="start01">
+          <node id="node-Col-01" name="Col-01">
+            <translate>3.009874 0.2512065 0.3299646</translate>
+            <rotate>0 1 0 -72.47519</rotate>
+            <scale>0.001011833 0.001011833 0.001011833</scale>
+            <instance_geometry url="#geom-Col-01">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="ColorMaterial" target="#ColorEffectR87G224B143-material"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+          </node>
+          <node id="node-FallenPine" name="FallenPine">
+            <translate>3.82195 0.2793814 0.0798521</translate>
+            <rotate>0 1 0 -72.47519</rotate>
+            <scale>0.6031727 0.6031727 0.6031727</scale>
+            <instance_geometry url="#geom-FallenPine">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="rotpine_1" target="#rotpine-material">
+                    <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="1"/>
+                  </instance_material>
+                  <instance_material symbol="deadwood_1" target="#deadwood-material">
+                    <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="1"/>
+                  </instance_material>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+          </node>
+          <node id="node-Branc" name="Branc">
+            <translate>0.772739 -0.09079388 1.073186</translate>
+            <rotate>0 1 0 -72.47519</rotate>
+            <scale>0.6031727 0.6031727 0.6031727</scale>
+            <instance_geometry url="#geom-Branc">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="deadpine21_1" target="#deadpine21-material">
+                    <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="1"/>
+                    <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="1"/>
+                  </instance_material>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+          </node>
+        </node>
+        <node id="node-detail2" name="detail2"/>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#MaxScene"/>
+  </scene>
+</COLLADA>

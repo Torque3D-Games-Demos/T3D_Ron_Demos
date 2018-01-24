@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Owner</author>
+      <authoring_tool>OpenCOLLADA for 3ds Max;  Version: 1.2.5;  Revision: 673;  Platform: Win32;  Configuration: Release Max9</authoring_tool>
+      <source_data>file:///C:/Users/Owner/Documents/3dsmax/scenes/TORQUE/PLANTS/Reeds/ReedMod.max</source_data>
+    </contributor>
+    <created>2012-02-17T13:04:50</created>
+    <modified>2012-02-17T13:04:50</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="Reeds01">
+      <profile_COMMON>
+        <newparam sid="reeds2_png-surface">
+          <surface type="2D">
+            <init_from>reeds2_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="reeds2_png-sampler">
+          <sampler2D>
+            <source>reeds2_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.5882353 0.5882353 0.5882353 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="reeds2_png-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0.9 0.9 0.9 1</color>
+            </specular>
+            <shininess>
+              <float>9.999999</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <texture texture="reeds2_png-sampler" texcoord="CHANNEL1"/>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <apply_reflection_dimming>0</apply_reflection_dimming>
+            <dim_level>0</dim_level>
+            <falloff_type>0</falloff_type>
+            <index_of_refraction>1.5</index_of_refraction>
+            <opacity_type>0</opacity_type>
+            <reflection_level>3</reflection_level>
+            <wire_size>1</wire_size>
+            <wire_units>0</wire_units>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_lock>1</ambient_diffuse_lock>
+            <ambient_diffuse_texture_lock>1</ambient_diffuse_texture_lock>
+            <diffuse_specular_lock>0</diffuse_specular_lock>
+            <soften>0.1</soften>
+            <use_self_illum_color>0</use_self_illum_color>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="Reeds01-material" name="Reeds01">
+      <instance_effect url="#Reeds01"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="geom-ReedMod128" name="ReedMod128">
+      <mesh>
+        <source id="geom-ReedMod128-positions">
+          <float_array id="geom-ReedMod128-positions-array" count="54">-3.023787 -3.056721 -0.002456655 0.009748809 -0.00432007 -0.002456514 3.063493 -3.044904 -0.002456655 -3.023787 -3.056721 7.076436 0.003796764 0.002632797 7.076436 3.063493 -3.044904 7.076436 0.00353539 3.129547 -0.002456655 0.01570122 0.004399776 7.060122 0.00353577 3.129548 7.076436 -4.28437 -0.3619496 -0.002901634 0.004610519 -0.009614852 -0.002901467 0.353392 -4.304829 -0.002901634 -4.28437 -0.36195 8.358204 0.004597097 -4.62311e-4 8.358204 0.353392 -4.304829 8.358204 2.034393 2.378092 -0.002901634 0.01479896 -0.006846696 8.338935 2.034394 2.378092 8.358204</float_array>
+          <technique_common>
+            <accessor source="#geom-ReedMod128-positions-array" count="18" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-ReedMod128-normals">
+          <float_array id="geom-ReedMod128-normals-array" count="54">0.001085373 -0.004200797 0.9999906 0.001085366 -0.004200768 0.9999906 8.80761e-4 -0.004369455 0.9999901 5.41744e-6 -0.004650183 0.9999892 -0.001065267 -0.004200769 0.9999906 -0.001065274 -0.004200797 0.9999906 0.001520815 -0.003126504 0.9999939 0.001520818 -0.003135497 0.9999939 0.001520835 -0.003135533 0.9999939 0.001085373 -0.004200797 0.9999906 0.001085366 -0.004200768 0.9999906 8.80761e-4 -0.004369494 0.99999 5.41744e-6 -0.004650183 0.9999892 -0.001072804 -0.004220868 0.9999905 -0.001072811 -0.004220896 0.9999906 0.001520815 -0.003126504 0.9999939 0.00152755 -0.003135498 0.9999939 0.001527567 -0.003135533 0.9999939</float_array>
+          <technique_common>
+            <accessor source="#geom-ReedMod128-normals-array" count="18" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-ReedMod128-map0">
+          <float_array id="geom-ReedMod128-map0-array" count="72">0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#geom-ReedMod128-map0-array" count="24" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-ReedMod128-map1">
+          <float_array id="geom-ReedMod128-map1-array" count="60">0 0 0 0.5 0 0 1 0 0 0 1 0 0.5 1 0 1 1 0 0.5 0 0 1 0 0 0.5 1 0 1 1 0 0 0 0 0.5 0 0 1 0 0 0 1 0 0.5 1 0 1 1 0 0.5 0 0 1 0 0 0.5 1 0 1 1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-ReedMod128-map1-array" count="20" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-ReedMod128-vertices">
+          <input semantic="POSITION" source="#geom-ReedMod128-positions"/>
+        </vertices>
+        <triangles material="Reeds01_1" count="12">
+          <input semantic="VERTEX" source="#geom-ReedMod128-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-ReedMod128-normals" offset="1"/>
+          <input semantic="COLOR" source="#geom-ReedMod128-map0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-ReedMod128-map1" offset="3" set="1"/>
+          <p>0 1 1 0 1 2 2 1 4 3 3 4 4 3 3 4 3 0 0 3 0 1 1 0 1 2 5 1 2 4 6 2 5 5 7 5 5 5 7 5 4 3 4 4 1 2 5 1 1 2 9 6 6 7 10 7 8 8 11 9 8 8 11 9 7 6 8 8 1 2 9 6 9 10 13 10 10 11 14 11 13 12 15 14 13 12 15 14 12 9 12 13 9 10 13 10 10 11 17 11 11 13 18 12 14 14 19 15 14 14 19 15 13 12 16 14 10 11 17 11 10 11 21 16 15 16 22 17 17 17 23 19 17 17 23 19 16 15 20 18 10 11 21 16</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_lights>
+    <light id="EnvironmentAmbientLight" name="EnvironmentAmbientLight">
+      <technique_common>
+        <ambient>
+          <color>0 0 0</color>
+        </ambient>
+      </technique_common>
+    </light>
+  </library_lights>
+  <library_images>
+    <image id="reeds2_png">
+      <init_from>file:///C:/Users/Owner/Documents/3dsmax/sceneassets/images/reeds2.png</init_from>
+    </image>
+  </library_images>
+  <library_visual_scenes>
+    <visual_scene id="MaxScene">
+      <node name="EnvironmentAmbientLight">
+        <instance_light url="#EnvironmentAmbientLight"/>
+      </node>
+      <node id="node-base01" name="base01">
+        <node id="node-start01" name="start01">
+          <node id="node-ReedMod128" name="ReedMod128">
+            <translate>-1.993279 -0.002555048 0.2950287</translate>
+            <scale>0.4777203 0.4777203 0.4777203</scale>
+            <instance_geometry url="#geom-ReedMod128">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Reeds01_1" target="#Reeds01-material">
+                    <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="1"/>
+                    <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="1"/>
+                  </instance_material>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+          </node>
+        </node>
+        <node id="node-detail128" name="detail128"/>
+        <node id="node-BB_detail64" name="BB_detail64"/>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#MaxScene"/>
+  </scene>
+</COLLADA>
