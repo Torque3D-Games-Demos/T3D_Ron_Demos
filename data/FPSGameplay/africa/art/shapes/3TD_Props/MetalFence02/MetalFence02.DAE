@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>RonMain</author>
+      <authoring_tool>OpenCOLLADA for 3ds Max;  Version: 1.2.5;  Revision: 673;  Platform: Win32;  Configuration: Release Max9</authoring_tool>
+      <source_data>file:///E:/3TDS%20Torque%20Model%20Library/African_Savannah/Props/MetalFence02/MetalFence02_Final.max</source_data>
+    </contributor>
+    <created>2012-12-24T10:39:30</created>
+    <modified>2012-12-24T10:39:30</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="RustyMetal05">
+      <profile_COMMON>
+        <newparam sid="_td_RustMetal_05_jpg-surface">
+          <surface type="2D">
+            <init_from>_td_RustMetal_05_jpg</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="_td_RustMetal_05_jpg-sampler">
+          <sampler2D>
+            <source>_td_RustMetal_05_jpg-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.5882353 0.5882353 0.5882353 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="_td_RustMetal_05_jpg-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0.9 0.9 0.9 1</color>
+            </specular>
+            <shininess>
+              <float>9.999999</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <apply_reflection_dimming>0</apply_reflection_dimming>
+            <dim_level>0</dim_level>
+            <falloff_type>0</falloff_type>
+            <index_of_refraction>1.5</index_of_refraction>
+            <opacity_type>0</opacity_type>
+            <reflection_level>3</reflection_level>
+            <wire_size>1</wire_size>
+            <wire_units>0</wire_units>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_lock>1</ambient_diffuse_lock>
+            <ambient_diffuse_texture_lock>1</ambient_diffuse_texture_lock>
+            <diffuse_specular_lock>0</diffuse_specular_lock>
+            <soften>0.1</soften>
+            <use_self_illum_color>0</use_self_illum_color>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="Corrigate_Trans01">
+      <profile_COMMON>
+        <newparam sid="_td_Corrigate_Trans01_png-surface">
+          <surface type="2D">
+            <init_from>_td_Corrigate_Trans01_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="_td_Corrigate_Trans01_png-sampler">
+          <sampler2D>
+            <source>_td_Corrigate_Trans01_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="_td_Corrigate_Trans01_png-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0.9 0.9 0.9 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <texture texture="_td_Corrigate_Trans01_png-sampler" texcoord="CHANNEL1"/>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <apply_reflection_dimming>0</apply_reflection_dimming>
+            <dim_level>0</dim_level>
+            <falloff_type>0</falloff_type>
+            <index_of_refraction>1.5</index_of_refraction>
+            <opacity_type>0</opacity_type>
+            <reflection_level>3</reflection_level>
+            <wire_size>1</wire_size>
+            <wire_units>0</wire_units>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_lock>1</ambient_diffuse_lock>
+            <ambient_diffuse_texture_lock>1</ambient_diffuse_texture_lock>
+            <diffuse_specular_lock>0</diffuse_specular_lock>
+            <soften>0.1</soften>
+            <use_self_illum_color>0</use_self_illum_color>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="ColorEffectR228G153B184">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <ambient>
+              <color>0.8941176 0.6 0.7215686 1</color>
+            </ambient>
+            <diffuse>
+              <color>0.8941176 0.6 0.7215686 1</color>
+            </diffuse>
+            <specular>
+              <color>1 1 1 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent>
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <apply_reflection_dimming>0</apply_reflection_dimming>
+            <dim_level>0</dim_level>
+            <falloff_type>0</falloff_type>
+            <index_of_refraction>1.5</index_of_refraction>
+            <opacity_type>0</opacity_type>
+            <reflection_level>3</reflection_level>
+            <wire_size>1</wire_size>
+            <wire_units>0</wire_units>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_lock>1</ambient_diffuse_lock>
+            <ambient_diffuse_texture_lock>1</ambient_diffuse_texture_lock>
+            <diffuse_specular_lock>0</diffuse_specular_lock>
+            <soften>0.1</soften>
+            <use_self_illum_color>0</use_self_illum_color>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="ColorEffectR228G153B184-material" name="ColorEffectR228G153B184-material">
+      <instance_effect url="#ColorEffectR228G153B184"/>
+    </material>
+    <material id="RustyMetal05-material" name="RustyMetal05">
+      <instance_effect url="#RustyMetal05"/>
+    </material>
+    <material id="Corrigate_Trans01-material" name="Corrigate_Trans01">
+      <instance_effect url="#Corrigate_Trans01"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="geom-MetalFenceTwo256" name="MetalFenceTwo256">
+      <mesh>
+        <source id="geom-MetalFenceTwo256-positions">
+          <float_array id="geom-MetalFenceTwo256-positions-array" count="168">0.05000001 1.23393e-8 -0.2822901 0.03535535 0.03535536 -0.2822901 -2.18557e-9 0.05000002 -0.2822901 -0.03535535 0.03535536 -0.2822901 -0.05000001 7.96815e-9 -0.2822901 -0.03535534 -0.03535534 -0.2822901 5.96244e-10 -0.05 -0.2822901 0.03535534 -0.03535534 -0.2822901 0.05000001 5.34115e-8 1.428087 0.03535535 0.0353554 1.428087 -2.18557e-9 0.05000006 1.428087 -0.03535535 0.0353554 1.428087 -0.05000001 4.90404e-8 1.428087 -0.03535534 -0.0353553 1.428087 5.96244e-10 -0.04999996 1.428087 0.03535534 -0.0353553 1.428087 -3.64993 0.007232662 0.1269926 -2.452483 0.007232662 0.1269926 -1.255036 0.007232662 0.1269926 -0.05758905 0.007232662 0.1269926 -3.64993 0.007232634 0.7688991 -2.452483 0.07859656 0.7688991 -1.255036 -0.08674338 0.7688991 -0.05758905 0.007232634 0.7688991 -3.64993 0.007232606 1.410806 -2.452483 0.007232606 1.410806 -1.255036 -0.04565341 1.410806 -0.05758905 0.007232606 1.410806 -3.64993 0.006232662 0.1269926 -2.452483 0.006232662 0.1269926 -1.255036 0.006232662 0.1269926 -0.05758905 0.006232662 0.1269926 -3.64993 0.006232634 0.7688991 -2.452483 0.07759656 0.7688991 -1.255036 -0.08774339 0.7688991 -0.05758905 0.006232634 0.7688991 -3.64993 0.006232606 1.410806 -2.452483 0.006232606 1.410806 -1.255036 -0.0466534 1.410806 -0.05758905 0.006232606 1.410806 -3.613702 9.14944e-4 -0.2822901 -3.628346 0.03627029 -0.2822901 -3.663702 0.05091495 -0.2822901 -3.699057 0.03627029 -0.2822901 -3.713702 9.14939e-4 -0.2822901 -3.699057 -0.03444041 -0.2822901 -3.663702 -0.04908507 -0.2822901 -3.628346 -0.03444041 -0.2822901 -3.613702 9.14985e-4 1.428087 -3.628346 0.03627033 1.428087 -3.663702 0.050915 1.428087 -3.699057 0.03627033 1.428087 -3.713702 9.1498e-4 1.428087 -3.699057 -0.03444037 1.428087 -3.663702 -0.04908503 1.428087 -3.628346 -0.03444037 1.428087</float_array>
+          <technique_common>
+            <accessor source="#geom-MetalFenceTwo256-positions-array" count="56" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-MetalFenceTwo256-normals">
+          <float_array id="geom-MetalFenceTwo256-normals-array" count="348">1 -3.69647e-7 1.12373e-11 0.707107 0.7071066 -1.69413e-8 0.7071066 0.707107 -1.69525e-8 1 2.0536e-7 -1.1233e-11 2.50603e-7 1 -2.39586e-8 -3.49111e-7 1 -2.39586e-8 -0.7071066 0.707107 -1.69525e-8 -0.7071071 0.7071065 -1.69413e-8 -1 1.4664e-7 -1.12304e-11 -1 -4.10719e-7 1.12367e-11 -0.7071069 -0.7071066 1.69413e-8 -0.7071065 -0.7071071 1.69525e-8 -3.12853e-7 -1 2.39586e-8 3.0804e-7 -1 2.39586e-8 0.7071065 -0.707107 1.69525e-8 0.7071069 -0.7071066 1.69413e-8 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0.03289033 0.9994477 -0.004730152 0.04729333 0.9963928 -0.07046024 -0.04086623 0.9985591 -0.03478063 -0.03907537 0.9990848 0.01739535 0.01192264 0.9995987 0.02569606 -0.02672974 0.9921317 0.1223118 -0.05140094 0.9984157 0.02288939 0 1 4.35261e-8 0.001629063 0.9956378 0.0932885 0 1 4.35261e-8 0.03216086 0.9988122 -0.03660473 -0.06757335 0.9975142 -0.01998247 -0.03289034 -0.9994477 0.004730152 0.03907537 -0.9990848 -0.01739535 0.04086623 -0.9985591 0.03478063 -0.04729333 -0.9963928 0.07046023 -0.01192264 -0.9995987 -0.02569605 0.02672974 -0.9921317 -0.1223118 0.05140094 -0.9984157 -0.02288939 0 -1 -4.35261e-8 -0.001629058 -0.9956378 -0.0932885 0 -1 -4.35261e-8 -0.03216086 -0.9988122 0.03660473 0.06757335 -0.9975142 0.01998248 0 0 -0.9999999 0 0 -1 0 0 -1 0 0 -0.9999999 0 0 -0.9999999 0 0 -0.9999999 0 0 -1 0 0 -1 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 0 0 1 0 0 0.9999999 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 -1 0 0 -1 0 0 -0.9999999 0 0 -1 0 0 -0.9999999 0 0 -1 0 0 1 -2.66967e-7 1.39023e-11 0.7071074 0.7071061 -1.69413e-8 0.7071069 0.7071065 -1.69552e-8 1 3.49111e-7 -1.39032e-11 2.90712e-7 1 -2.39586e-8 -2.87504e-7 1 -2.39586e-8 -0.7071071 0.7071065 -1.69552e-8 -0.7071074 0.7071061 -1.69413e-8 -1 2.16911e-7 -1.39015e-11 -1 -3.08039e-7 1.39023e-11 -0.7071074 -0.7071062 1.69413e-8 -0.7071069 -0.7071065 1.69552e-8 -2.91033e-7 -1 2.39586e-8 2.87504e-7 -1 2.39586e-8 0.7071069 -0.7071066 1.69552e-8 0.7071074 -0.7071061 1.69413e-8 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#geom-MetalFenceTwo256-normals-array" count="116" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-MetalFenceTwo256-map1">
+          <float_array id="geom-MetalFenceTwo256-map1-array" count="312">0.5 -1.10729 0.55 0.5353553 -1.10729 0.5353553 0.5 -1.10729 0.55 0.5353553 -1.10729 0.5353554 0.5 -1.10729 0.45 0.5353553 -1.10729 0.4646446 0.5 -1.10729 0.45 0.5353553 -1.10729 0.4646446 0.5000001 0.6030865 0.55 0.5353554 0.6030865 0.5353553 0.5 0.6030865 0.5500001 0.5353553 0.6030865 0.5353554 0.4999999 0.6030865 0.45 0.5353553 0.6030865 0.4646446 0.5 0.6030865 0.45 0.5353553 0.6030865 0.4646447 0.4646446 -1.10729 0.5353553 0.4646446 0.6030865 0.5353554 0.4646446 -1.10729 0.4646447 0.4646446 0.6030865 0.4646447 0.4646446 -1.10729 0.4646447 0.4646446 0.6030865 0.4646447 0.4646446 -1.10729 0.5353553 0.4646447 0.6030865 0.5353553 0.4646447 0.4646446 -1.10729 0.5 0.45 -1.10729 0.5353553 0.4646447 -1.10729 0.55 0.5 -1.10729 0.5353553 0.5353554 -1.10729 0.5 0.55 -1.10729 0.4646446 0.5353553 -1.10729 0.45 0.5 -1.10729 0.55 0.5000001 0.6030865 0.5353553 0.5353554 0.6030865 0.5 0.5500001 0.6030865 0.4646447 0.5353554 0.6030865 0.45 0.5000001 0.6030865 0.4646446 0.4646447 0.6030865 0.5 0.45 0.6030865 0.5353553 0.4646447 0.6030865 -0.2032559 5.00172e-4 4.99517e-4 0.2937595 4.99964e-4 4.99517e-4 0.7907748 4.99725e-4 4.99517e-4 1.28779 4.99517e-4 4.99517e-4 -0.2032558 0.5000003 4.99517e-4 0.2937595 0.5000001 -71.29213 0.7907748 0.4999999 93.88263 1.28779 0.4999996 4.99517e-4 -0.2032558 0.9995004 4.99517e-4 0.2937596 0.9995002 4.99517e-4 0.7907749 0.9995 52.83368 1.28779 0.9994998 4.99517e-4 -0.2032559 5.00172e-4 0.9995005 0.2937595 4.99964e-4 0.9995005 0.7907748 4.99725e-4 0.9995005 1.28779 4.99517e-4 0.9995005 -0.2032558 0.5000003 0.9995005 0.2937595 0.5000001 -70.29313 0.7907748 0.4999999 94.88163 1.28779 0.4999996 0.9995005 -0.2032558 0.9995004 0.9995005 0.2937596 0.9995002 0.9995005 0.7907749 0.9995 53.83268 1.28779 0.9994998 0.9995005 0.5 -1.10729 0.55 0.5353553 -1.10729 0.5353553 0.5 -1.10729 0.55 0.5353553 -1.10729 0.5353554 0.5 -1.10729 0.45 0.5353553 -1.10729 0.4646446 0.5 -1.10729 0.45 0.5353553 -1.10729 0.4646446 0.5000001 0.6030865 0.55 0.5353554 0.6030865 0.5353553 0.5 0.6030865 0.5500001 0.5353553 0.6030865 0.5353554 0.4999999 0.6030865 0.45 0.5353553 0.6030865 0.4646446 0.5 0.6030865 0.45 0.5353553 0.6030865 0.4646447 0.4646446 -1.10729 0.5353553 0.4646446 0.6030865 0.5353554 0.4646446 -1.10729 0.4646447 0.4646446 0.6030865 0.4646447 0.4646446 -1.10729 0.4646447 0.4646446 0.6030865 0.4646447 0.4646446 -1.10729 0.5353553 0.4646447 0.6030865 0.5353553 0.4646447 0.4646446 -1.10729 0.5 0.45 -1.10729 0.5353553 0.4646447 -1.10729 0.55 0.5 -1.10729 0.5353553 0.5353554 -1.10729 0.5 0.55 -1.10729 0.4646446 0.5353553 -1.10729 0.45 0.5 -1.10729 0.55 0.5000001 0.6030865 0.5353553 0.5353554 0.6030865 0.5 0.5500001 0.6030865 0.4646447 0.5353554 0.6030865 0.45 0.5000001 0.6030865 0.4646446 0.4646447 0.6030865 0.5 0.45 0.6030865 0.5353553 0.4646447 0.6030865</float_array>
+          <technique_common>
+            <accessor source="#geom-MetalFenceTwo256-map1-array" count="104" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-MetalFenceTwo256-map1-textangents">
+          <float_array id="geom-MetalFenceTwo256-map1-textangents-array" count="396">3.4151e-7 0.9238795 1.43345e-12 -0.6532814 0.6532817 6.48314e-9 -0.6532816 0.6532812 6.48745e-9 -1.89728e-7 0.9238795 1.4329e-12 -0.6532812 0.6532816 -6.48315e-9 -0.9238795 2.31527e-7 -3.05619e-9 -0.9238795 -3.22537e-7 3.05619e-9 -0.6532817 0.6532814 -6.48744e-9 -0.6532817 -0.6532814 6.48744e-9 -0.6532811 -0.6532816 6.48315e-9 -0.6532816 -0.6532812 -6.48745e-9 -1.35477e-7 -0.9238795 -1.43257e-12 3.79455e-7 -0.9238795 -1.43337e-12 -0.6532813 -0.6532818 -6.48314e-9 0.6532814 -0.6532817 -6.48314e-9 0.6532817 -0.6532812 -6.48745e-9 0.6532813 -0.6532815 6.48315e-9 0.9238795 -2.89038e-7 3.05619e-9 0.9238795 2.84591e-7 -3.05619e-9 0.6532818 -0.6532813 6.48744e-9 0.6532818 0.6532813 -6.48744e-9 0.6532812 0.6532816 -6.48315e-9 0.6532816 0.6532812 6.48745e-9 0.6532814 0.6532818 6.48314e-9 -1 -4.73626e-7 0 -1 -1.03387e-6 0 -1 -7.63633e-7 0 -1 -1.93323e-6 0 -1 -9.53286e-7 0 -1 -8.82912e-7 0 -1 -3.28407e-7 0 -1 -3.43292e-7 0 1 -2.68153e-7 0 1 0 0 1 2.75735e-7 0 1 1.10294e-6 0 1 3.67646e-7 0 1 0 0 1 -2.01115e-7 0 1 -8.04459e-7 0 0.9961255 -0.03278101 -1.35943e-6 0.996786 -0.04730342 1.2119e-4 0.9986597 0.04085688 -3.86807e-4 0.9988425 0.03906607 -1.01628e-5 0.9956864 -0.01187617 7.52558e-6 0.9989561 0.02690109 1.01484e-4 0.9979965 0.05137977 -1.76383e-5 1 -9.7449e-15 2.23887e-7 0.999074 -0.001575896 -6.27439e-4 1 -8.35278e-15 1.91903e-7 0.9966521 -0.0321094 -4.93921e-4 0.9975474 0.06757303 -1.2782e-4 0.9961255 -0.03278102 -1.3594e-6 0.9988425 0.03906607 -1.01628e-5 0.9986597 0.04085688 -3.86807e-4 0.996786 -0.04730342 1.2119e-4 0.9956864 -0.01187617 7.52556e-6 0.9989561 0.02690109 1.01484e-4 0.9979965 0.05137977 -1.76383e-5 1 -9.7449e-15 2.23887e-7 0.999074 -0.001575892 -6.27439e-4 1 -8.35278e-15 1.91903e-7 0.9966521 -0.03210941 -4.93921e-4 0.9975474 0.06757303 -1.2782e-4 NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN 2.46646e-7 0.9238799 1.7734e-12 -0.6532808 0.6532821 6.48314e-9 -0.6532811 0.6532815 6.48847e-9 -3.22537e-7 0.9238799 1.77351e-12 -0.6532807 0.6532818 -6.48315e-9 -0.9238794 2.68583e-7 -3.05619e-9 -0.9238794 -2.65619e-7 3.05619e-9 -0.6532813 0.6532816 -6.48846e-9 -0.6532811 -0.6532817 6.48846e-9 -0.6532807 -0.6532819 6.48315e-9 -0.653281 -0.6532816 -6.48847e-9 -2.004e-7 -0.9238799 -1.77329e-12 2.84591e-7 -0.9238799 -1.7734e-12 -0.6532808 -0.6532821 -6.48314e-9 0.6532809 -0.653282 -6.48314e-9 0.6532811 -0.6532815 -6.48847e-9 0.6532807 -0.6532818 6.48315e-9 0.9238795 -2.6888e-7 3.05619e-9 0.9238795 2.65619e-7 -3.05619e-9 0.6532813 -0.6532816 6.48846e-9 0.6532813 0.6532816 -6.48846e-9 0.6532807 0.6532818 -6.48315e-9 0.6532811 0.6532814 6.48847e-9 0.6532808 0.6532821 6.48314e-9 -1 -4.73634e-7 0 -1 -1.03396e-6 0 -1 -7.63649e-7 0 -1 -1.93332e-6 0 -1 -9.53293e-7 0 -1 -8.82902e-7 0 -1 -3.28374e-7 0 -1 -3.43282e-7 0 1 -2.67628e-7 0 1 0 0 1 2.75246e-7 0 1 1.10099e-6 0 1 3.66995e-7 0 1 0 0 1 -2.00721e-7 0 1 -8.02885e-7 0</float_array>
+          <technique_common>
+            <accessor source="#geom-MetalFenceTwo256-map1-textangents-array" count="132" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-MetalFenceTwo256-map1-texbinormals">
+          <float_array id="geom-MetalFenceTwo256-map1-texbinormals-array" count="396">1.12373e-11 1.55155e-12 -1 -1.69413e-8 -7.0173e-9 -1 -1.69525e-8 -7.02196e-9 -1 -1.1233e-11 1.55096e-12 -1 -7.0173e-9 -1.69413e-8 -1 3.30799e-9 -2.39586e-8 -1 -3.30799e-9 -2.39586e-8 -1 -7.02196e-9 -1.69525e-8 -1 7.02196e-9 -1.69525e-8 -1 7.0173e-9 -1.69413e-8 -1 1.69525e-8 -7.02196e-9 -1 1.12304e-11 1.5506e-12 -1 -1.12367e-11 1.55146e-12 -1 1.69413e-8 -7.0173e-9 -1 -1.69413e-8 -7.01731e-9 -1 -1.69525e-8 -7.02196e-9 -1 -7.0173e-9 -1.69413e-8 -1 3.30799e-9 -2.39586e-8 -1 -3.30799e-9 -2.39586e-8 -1 -7.02196e-9 -1.69525e-8 -1 7.02196e-9 -1.69525e-8 -1 7.0173e-9 -1.69413e-8 -1 1.69525e-8 -7.02196e-9 -1 1.69413e-8 -7.0173e-9 -1 4.73626e-7 -1 0 1.03387e-6 -1 0 7.63633e-7 -1 0 1.93323e-6 -1 0 9.53286e-7 -1 0 8.82912e-7 -1 0 3.28407e-7 -1 0 3.43292e-7 -1 0 -2.68153e-7 -1 0 0 -1 0 2.75735e-7 -1 0 1.10294e-6 -1 0 3.67646e-7 -1 0 0 -1 0 -2.01115e-7 -1 0 -8.04459e-7 -1 0 1.56941e-4 0.004727548 0.9999888 0.003218992 0.07038677 0.9975146 -0.001035301 0.03476737 0.9993949 6.89993e-4 -0.01738166 0.9998487 -3.14026e-4 -0.02569414 0.9996698 0.003191811 -0.1222702 0.9924917 0.001194476 -0.02285821 0.999738 -2.23887e-7 -4.35261e-8 1 4.78131e-4 -0.09328938 0.9956389 -1.91903e-7 -4.35261e-8 1 0.001673427 0.03656981 0.9993297 -0.001222978 0.01994542 0.9998003 -1.56941e-4 -0.004727549 -0.9999888 -6.89993e-4 0.01738166 -0.9998487 0.001035301 -0.03476737 -0.9993949 -0.003218992 -0.07038677 -0.9975146 3.14026e-4 0.02569413 -0.9996698 -0.003191811 0.1222702 -0.9924917 -0.001194476 0.02285821 -0.999738 2.23887e-7 4.35261e-8 -1 -4.78131e-4 0.09328938 -0.9956389 1.91903e-7 4.35261e-8 -1 -0.001673427 -0.03656981 -0.9993297 0.001222978 -0.01994543 -0.9998003 NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN 1.39023e-11 1.91951e-12 -1 -1.69413e-8 -7.01728e-9 -1 -1.69552e-8 -7.02304e-9 -1 -1.39032e-11 1.91963e-12 -1 -7.0173e-9 -1.69413e-8 -1 3.30799e-9 -2.39586e-8 -1 -3.30799e-9 -2.39586e-8 -1 -7.02306e-9 -1.69552e-8 -1 7.02306e-9 -1.69552e-8 -1 7.0173e-9 -1.69413e-8 -1 1.69552e-8 -7.02304e-9 -1 1.39015e-11 1.91939e-12 -1 -1.39023e-11 1.9195e-12 -1 1.69413e-8 -7.01728e-9 -1 -1.69413e-8 -7.01728e-9 -1 -1.69552e-8 -7.02305e-9 -1 -7.0173e-9 -1.69413e-8 -1 3.30799e-9 -2.39586e-8 -1 -3.30799e-9 -2.39586e-8 -1 -7.02306e-9 -1.69552e-8 -1 7.02306e-9 -1.69552e-8 -1 7.0173e-9 -1.69413e-8 -1 1.69552e-8 -7.02304e-9 -1 1.69413e-8 -7.01728e-9 -1 4.73634e-7 -1 0 1.03396e-6 -1 0 7.63649e-7 -1 0 1.93332e-6 -1 0 9.53293e-7 -1 0 8.82902e-7 -1 0 3.28374e-7 -1 0 3.43282e-7 -1 0 -2.67628e-7 -1 0 0 -1 0 2.75246e-7 -1 0 1.10099e-6 -1 0 3.66995e-7 -1 0 0 -1 0 -2.00721e-7 -1 0 -8.02885e-7 -1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-MetalFenceTwo256-map1-texbinormals-array" count="132" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-MetalFenceTwo256-vertices">
+          <input semantic="POSITION" source="#geom-MetalFenceTwo256-positions"/>
+        </vertices>
+        <triangles material="RustyMetal05_6" count="16">
+          <input semantic="VERTEX" source="#geom-MetalFenceTwo256-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-MetalFenceTwo256-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#geom-MetalFenceTwo256-map1" offset="2" set="1"/>
+          <input semantic="TEXTANGENT" source="#geom-MetalFenceTwo256-map1-textangents" offset="3" set="1"/>
+          <input semantic="TEXBINORMAL" source="#geom-MetalFenceTwo256-map1-texbinormals" offset="3" set="1"/>
+          <p>0 0 0 0 1 1 1 1 9 2 9 2 9 2 9 2 8 3 8 3 0 0 0 0 1 1 16 4 2 4 2 5 10 5 10 6 10 5 10 6 9 2 17 7 1 1 16 4 2 4 2 5 3 6 3 8 11 7 11 9 11 7 11 9 10 5 10 6 2 4 2 5 3 6 18 10 4 8 4 11 12 9 12 12 12 9 12 12 11 7 19 13 3 6 18 10 4 8 4 11 5 10 5 14 13 11 13 15 13 11 13 15 12 9 12 12 4 8 4 11 5 10 20 16 6 12 6 17 14 13 14 18 14 13 14 18 13 11 21 19 5 10 20 16 6 12 6 17 7 14 7 20 15 15 15 21 15 15 15 21 14 13 14 18 6 12 6 17 7 14 22 22 0 0 0 0 8 3 8 3 8 3 8 3 15 15 23 23 7 14 22 22</p>
+        </triangles>
+        <triangles material="RustyMetal05_6" count="6">
+          <input semantic="VERTEX" source="#geom-MetalFenceTwo256-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-MetalFenceTwo256-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#geom-MetalFenceTwo256-map1" offset="2" set="1"/>
+          <input semantic="TEXTANGENT" source="#geom-MetalFenceTwo256-map1-textangents" offset="3" set="1"/>
+          <input semantic="TEXBINORMAL" source="#geom-MetalFenceTwo256-map1-texbinormals" offset="3" set="1"/>
+          <p>6 16 25 24 5 17 26 25 4 18 27 26 4 18 27 26 3 19 28 27 2 20 29 28 2 20 29 28 1 21 30 29 0 22 31 30 4 18 27 26 2 20 29 28 0 22 31 30 6 16 25 24 4 18 27 26 0 22 31 30 7 23 24 31 6 16 25 24 0 22 31 30</p>
+        </triangles>
+        <triangles material="RustyMetal05_6" count="6">
+          <input semantic="VERTEX" source="#geom-MetalFenceTwo256-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-MetalFenceTwo256-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#geom-MetalFenceTwo256-map1" offset="2" set="1"/>
+          <input semantic="TEXTANGENT" source="#geom-MetalFenceTwo256-map1-textangents" offset="3" set="1"/>
+          <input semantic="TEXBINORMAL" source="#geom-MetalFenceTwo256-map1-texbinormals" offset="3" set="1"/>
+          <p>9 24 33 32 10 25 34 33 11 26 35 34 11 26 35 34 12 27 36 35 13 28 37 36 13 28 37 36 14 29 38 37 15 30 39 38 11 26 35 34 13 28 37 36 15 30 39 38 9 24 33 32 11 26 35 34 15 30 39 38 8 31 32 39 9 24 33 32 15 30 39 38</p>
+        </triangles>
+        <triangles material="Corrigate_Trans01_6" count="12">
+          <input semantic="VERTEX" source="#geom-MetalFenceTwo256-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-MetalFenceTwo256-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#geom-MetalFenceTwo256-map1" offset="2" set="1"/>
+          <input semantic="TEXTANGENT" source="#geom-MetalFenceTwo256-map1-textangents" offset="3" set="1"/>
+          <input semantic="TEXBINORMAL" source="#geom-MetalFenceTwo256-map1-texbinormals" offset="3" set="1"/>
+          <p>21 32 45 40 17 33 41 41 16 34 40 42 16 34 40 42 20 35 44 43 21 32 45 40 22 36 46 44 18 37 42 45 17 33 41 41 17 33 41 41 21 32 45 40 22 36 46 44 23 38 47 46 19 39 43 47 18 37 42 45 18 37 42 45 22 36 46 44 23 38 47 46 25 40 49 48 21 32 45 40 20 35 44 43 20 35 44 43 24 41 48 49 25 40 49 48 26 42 50 50 22 36 46 44 21 32 45 40 21 32 45 40 25 40 49 48 26 42 50 50 27 43 51 51 23 38 47 46 22 36 46 44 22 36 46 44 26 42 50 50 27 43 51 51</p>
+        </triangles>
+        <triangles material="Corrigate_Trans01_6" count="12">
+          <input semantic="VERTEX" source="#geom-MetalFenceTwo256-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-MetalFenceTwo256-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#geom-MetalFenceTwo256-map1" offset="2" set="1"/>
+          <input semantic="TEXTANGENT" source="#geom-MetalFenceTwo256-map1-textangents" offset="3" set="1"/>
+          <input semantic="TEXBINORMAL" source="#geom-MetalFenceTwo256-map1-texbinormals" offset="3" set="1"/>
+          <p>33 44 57 52 32 45 56 53 28 46 52 54 28 46 52 54 29 47 53 55 33 44 57 52 34 48 58 56 33 44 57 52 29 47 53 55 29 47 53 55 30 49 54 57 34 48 58 56 35 50 59 58 34 48 58 56 30 49 54 57 30 49 54 57 31 51 55 59 35 50 59 58 37 52 61 60 36 53 60 61 32 45 56 53 32 45 56 53 33 44 57 52 37 52 61 60 38 54 62 62 37 52 61 60 33 44 57 52 33 44 57 52 34 48 58 56 38 54 62 62 39 55 63 63 38 54 62 62 34 48 58 56 34 48 58 56 35 50 59 58 39 55 63 63</p>
+        </triangles>
+        <triangles material="Corrigate_Trans01_6" count="6">
+          <input semantic="VERTEX" source="#geom-MetalFenceTwo256-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-MetalFenceTwo256-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#geom-MetalFenceTwo256-map1" offset="2" set="1"/>
+          <input semantic="TEXTANGENT" source="#geom-MetalFenceTwo256-map1-textangents" offset="3" set="1"/>
+          <input semantic="TEXBINORMAL" source="#geom-MetalFenceTwo256-map1-texbinormals" offset="3" set="1"/>
+          <p>29 56 53 64 28 57 52 65 16 58 40 66 16 58 40 66 17 59 41 67 29 56 53 64 30 60 54 68 29 56 53 64 17 59 41 67 17 59 41 67 18 61 42 69 30 60 54 68 31 62 55 70 30 60 54 68 18 61 42 69 18 61 42 69 19 63 43 71 31 62 55 70</p>
+        </triangles>
+        <triangles material="Corrigate_Trans01_6" count="4">
+          <input semantic="VERTEX" source="#geom-MetalFenceTwo256-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-MetalFenceTwo256-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#geom-MetalFenceTwo256-map1" offset="2" set="1"/>
+          <input semantic="TEXTANGENT" source="#geom-MetalFenceTwo256-map1-textangents" offset="3" set="1"/>
+          <input semantic="TEXBINORMAL" source="#geom-MetalFenceTwo256-map1-texbinormals" offset="3" set="1"/>
+          <p>35 64 59 72 31 65 55 73 19 66 43 74 19 66 43 74 23 67 47 75 35 64 59 72 39 68 63 76 35 64 59 72 23 67 47 75 23 67 47 75 27 69 51 77 39 68 63 76</p>
+        </triangles>
+        <triangles material="Corrigate_Trans01_6" count="6">
+          <input semantic="VERTEX" source="#geom-MetalFenceTwo256-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-MetalFenceTwo256-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#geom-MetalFenceTwo256-map1" offset="2" set="1"/>
+          <input semantic="TEXTANGENT" source="#geom-MetalFenceTwo256-map1-textangents" offset="3" set="1"/>
+          <input semantic="TEXBINORMAL" source="#geom-MetalFenceTwo256-map1-texbinormals" offset="3" set="1"/>
+          <p>38 70 62 78 39 71 63 79 27 72 51 80 27 72 51 80 26 73 50 81 38 70 62 78 37 74 61 82 38 70 62 78 26 73 50 81 26 73 50 81 25 75 49 83 37 74 61 82 36 76 60 84 37 74 61 82 25 75 49 83 25 75 49 83 24 77 48 85 36 76 60 84</p>
+        </triangles>
+        <triangles material="Corrigate_Trans01_6" count="4">
+          <input semantic="VERTEX" source="#geom-MetalFenceTwo256-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-MetalFenceTwo256-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#geom-MetalFenceTwo256-map1" offset="2" set="1"/>
+          <input semantic="TEXTANGENT" source="#geom-MetalFenceTwo256-map1-textangents" offset="3" set="1"/>
+          <input semantic="TEXBINORMAL" source="#geom-MetalFenceTwo256-map1-texbinormals" offset="3" set="1"/>
+          <p>32 78 56 86 36 79 60 87 24 80 48 88 24 80 48 88 20 81 44 89 32 78 56 86 28 82 52 90 32 78 56 86 20 81 44 89 20 81 44 89 16 83 40 91 28 82 52 90</p>
+        </triangles>
+        <triangles material="RustyMetal05_6" count="16">
+          <input semantic="VERTEX" source="#geom-MetalFenceTwo256-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-MetalFenceTwo256-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#geom-MetalFenceTwo256-map1" offset="2" set="1"/>
+          <input semantic="TEXTANGENT" source="#geom-MetalFenceTwo256-map1-textangents" offset="3" set="1"/>
+          <input semantic="TEXBINORMAL" source="#geom-MetalFenceTwo256-map1-texbinormals" offset="3" set="1"/>
+          <p>40 84 64 92 41 85 65 93 49 86 73 94 49 86 73 94 48 87 72 95 40 84 64 92 41 85 80 96 42 88 66 97 50 89 74 98 50 89 74 98 49 86 81 99 41 85 80 96 42 88 66 97 43 90 67 100 51 91 75 101 51 91 75 101 50 89 74 98 42 88 66 97 43 90 82 102 44 92 68 103 52 93 76 104 52 93 76 104 51 91 83 105 43 90 82 102 44 92 68 103 45 94 69 106 53 95 77 107 53 95 77 107 52 93 76 104 44 92 68 103 45 94 84 108 46 96 70 109 54 97 78 110 54 97 78 110 53 95 85 111 45 94 84 108 46 96 70 109 47 98 71 112 55 99 79 113 55 99 79 113 54 97 78 110 46 96 70 109 47 98 86 114 40 84 64 92 48 87 72 95 48 87 72 95 55 99 87 115 47 98 86 114</p>
+        </triangles>
+        <triangles material="RustyMetal05_6" count="6">
+          <input semantic="VERTEX" source="#geom-MetalFenceTwo256-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-MetalFenceTwo256-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#geom-MetalFenceTwo256-map1" offset="2" set="1"/>
+          <input semantic="TEXTANGENT" source="#geom-MetalFenceTwo256-map1-textangents" offset="3" set="1"/>
+          <input semantic="TEXBINORMAL" source="#geom-MetalFenceTwo256-map1-texbinormals" offset="3" set="1"/>
+          <p>46 100 89 116 45 101 90 117 44 102 91 118 44 102 91 118 43 103 92 119 42 104 93 120 42 104 93 120 41 105 94 121 40 106 95 122 44 102 91 118 42 104 93 120 40 106 95 122 46 100 89 116 44 102 91 118 40 106 95 122 47 107 88 123 46 100 89 116 40 106 95 122</p>
+        </triangles>
+        <triangles material="RustyMetal05_6" count="6">
+          <input semantic="VERTEX" source="#geom-MetalFenceTwo256-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-MetalFenceTwo256-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#geom-MetalFenceTwo256-map1" offset="2" set="1"/>
+          <input semantic="TEXTANGENT" source="#geom-MetalFenceTwo256-map1-textangents" offset="3" set="1"/>
+          <input semantic="TEXBINORMAL" source="#geom-MetalFenceTwo256-map1-texbinormals" offset="3" set="1"/>
+          <p>49 108 97 124 50 109 98 125 51 110 99 126 51 110 99 126 52 111 100 127 53 112 101 128 53 112 101 128 54 113 102 129 55 114 103 130 51 110 99 126 53 112 101 128 55 114 103 130 49 108 97 124 51 110 99 126 55 114 103 130 48 115 96 131 49 108 97 124 55 114 103 130</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-Collision" name="Collision">
+      <mesh>
+        <source id="geom-Collision-positions">
+          <float_array id="geom-Collision-positions-array" count="24">-1.880474 -0.0913179 0 1.90464 -0.09131788 0 -1.880474 0.09497391 0 1.90464 0.09497393 0 -1.880474 -0.0913179 1.367023 1.90464 -0.09131788 1.367023 -1.880474 0.09497391 1.367023 1.90464 0.09497393 1.367023</float_array>
+          <technique_common>
+            <accessor source="#geom-Collision-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Collision-normals">
+          <float_array id="geom-Collision-normals-array" count="72">0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 3.93678e-9 -0.9999999 0 3.93678e-9 -1 0 3.93678e-9 -0.9999999 0 3.93678e-9 -1 0 1 0 0 1 0 0 1 0 0 1 0 0 -3.93678e-9 0.9999999 0 -3.93678e-9 1 0 -3.93678e-9 0.9999999 0 -3.93678e-9 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Collision-normals-array" count="24" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Collision-map1">
+          <float_array id="geom-Collision-map1-array" count="72">1 0 0 0 0 0 1 1 0 0 1 0 0 0 0 1 0 0 0 1 0 1 1 0 0 0 0 1 0 0 0 1 0 1 1 0 0 0 0 1 0 0 0 1 0 1 1 0 0 0 0 1 0 0 0 1 0 1 1 0 0 0 0 1 0 0 0 1 0 1 1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Collision-map1-array" count="24" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Collision-map1-textangents">
+          <float_array id="geom-Collision-map1-textangents-array" count="72">-1 -3.93678e-9 0 -1 -3.93678e-9 0 -1 -3.93678e-9 0 -1 -3.93678e-9 0 1 3.93678e-9 0 1 3.93678e-9 0 1 3.93678e-9 0 1 3.93678e-9 0 1 3.93678e-9 0 1 3.93678e-9 0 1 3.93678e-9 0 1 3.93678e-9 0 0 1 0 0 1 0 0 1 0 0 1 0 -1 -3.93678e-9 0 -1 -3.93678e-9 0 -1 -3.93678e-9 0 -1 -3.93678e-9 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Collision-map1-textangents-array" count="24" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Collision-map1-texbinormals">
+          <float_array id="geom-Collision-map1-texbinormals-array" count="72">3.93678e-9 -1 0 3.93678e-9 -1 0 3.93678e-9 -1 0 3.93678e-9 -1 0 3.93678e-9 -1 0 3.93678e-9 -1 0 3.93678e-9 -1 0 3.93678e-9 -1 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-Collision-map1-texbinormals-array" count="24" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-Collision-vertices">
+          <input semantic="POSITION" source="#geom-Collision-positions"/>
+        </vertices>
+        <triangles material="ColorMaterial" count="12">
+          <input semantic="VERTEX" source="#geom-Collision-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-Collision-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#geom-Collision-map1" offset="2" set="1"/>
+          <input semantic="TEXTANGENT" source="#geom-Collision-map1-textangents" offset="3" set="1"/>
+          <input semantic="TEXBINORMAL" source="#geom-Collision-map1-texbinormals" offset="3" set="1"/>
+          <p>0 0 0 0 2 1 2 1 3 2 3 2 3 2 3 2 1 3 1 3 0 0 0 0 4 4 4 4 5 5 5 5 7 6 7 6 7 6 7 6 6 7 6 7 4 4 4 4 0 8 8 8 1 9 9 9 5 10 11 10 5 10 11 10 4 11 10 11 0 8 8 8 1 12 12 12 3 13 13 13 7 14 15 14 7 14 15 14 5 15 14 15 1 12 12 12 3 16 16 16 2 17 17 17 6 18 19 18 6 18 19 18 7 19 18 19 3 16 16 16 2 20 20 20 0 21 21 21 4 22 23 22 4 22 23 22 6 23 22 23 2 20 20 20</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_lights>
+    <light id="EnvironmentAmbientLight" name="EnvironmentAmbientLight">
+      <technique_common>
+        <ambient>
+          <color>0 0 0</color>
+        </ambient>
+      </technique_common>
+    </light>
+    <light id="Sky01-light" name="Sky01">
+      <technique_common>
+        <point>
+          <color>0.95 0.95 1</color>
+          <constant_attenuation>1</constant_attenuation>
+          <linear_attenuation>0</linear_attenuation>
+          <quadratic_attenuation>0</quadratic_attenuation>
+        </point>
+      </technique_common>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <skylight>
+            <cast_shadows>1</cast_shadows>
+            <color_map_amount>100</color_map_amount>
+            <color_map_on>1</color_map_on>
+            <intensity_on>1</intensity_on>
+            <mode>1</mode>
+            <multiplier>1</multiplier>
+            <ray_bias>0.004999995</ray_bias>
+            <rays_per_sample>12</rays_per_sample>
+          </skylight>
+        </technique>
+      </extra>
+    </light>
+  </library_lights>
+  <library_images>
+    <image id="_td_Corrigate_Trans01_png">
+      <init_from>file:///C:/Users/RonMain/Documents/3dsmax/sceneassets/AfricaSavannah/Props/3td_Corrigate_Trans01.png</init_from>
+    </image>
+    <image id="_td_RustMetal_05_jpg">
+      <init_from>file:///C:/Users/RonMain/Documents/3dsmax/sceneassets/AfricaSavannah/Props/3td_RustMetal_05.jpg</init_from>
+    </image>
+  </library_images>
+  <library_visual_scenes>
+    <visual_scene id="MaxScene">
+      <node name="EnvironmentAmbientLight">
+        <instance_light url="#EnvironmentAmbientLight"/>
+      </node>
+      <node id="node-MetalFenceTwo256" name="MetalFenceTwo256">
+        <matrix>1 0 0 0.03953612 0 1 0 -0.01180608 0 0 1 0.5239194 0 0 0 1</matrix>
+        <node>
+          <matrix>1 0 0 1.831851 0 1 0 0.004573412 0 0 1 -0.5728982 0 0 0 1</matrix>
+          <instance_geometry url="#geom-MetalFenceTwo256">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="Corrigate_Trans01_6" target="#Corrigate_Trans01-material">
+                  <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="1"/>
+                  <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="1"/>
+                </instance_material>
+                <instance_material symbol="RustyMetal05_6" target="#RustyMetal05-material">
+                  <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="1"/>
+                </instance_material>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+      </node>
+      <node id="node-Sky01" name="Sky01">
+        <matrix>1 0 0 -5.684757 0 1 0 2.00195 0 0 1 0 0 0 0 1</matrix>
+        <instance_light url="#Sky01-light"/>
+      </node>
+      <node id="node-Collision" name="Collision">
+        <matrix>1 0 0 0.02776951 0 1 0 -0.01288151 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#geom-Collision">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="ColorMaterial" target="#ColorEffectR228G153B184-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node-Base01" name="Base01">
+        <matrix>1 0 0 0.01733476 0 1 0 -0.01288331 0 0 1 0 0 0 0 1</matrix>
+      </node>
+      <node id="node-Start01" name="Start01">
+        <matrix>1 0 0 0.01733476 0 1 0 -0.01288331 0 0 1 0 0 0 0 1</matrix>
+      </node>
+      <node id="node-detail256" name="detail256">
+        <matrix>1 0 0 0.01733476 0 1 0 -0.01288331 0 0 1 0 0 0 0 1</matrix>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#MaxScene"/>
+  </scene>
+</COLLADA>

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>RonMain</author>
+      <authoring_tool>OpenCOLLADA for 3ds Max;  Version: 1.2.5;  Revision: 673;  Platform: Win32;  Configuration: Release Max9</authoring_tool>
+      <source_data>file:///E:/3TDS%20Torque%20Model%20Library/Ground%20Cover/LongGrass/LongGrass_GC-final.max</source_data>
+    </contributor>
+    <created>2012-10-15T12:06:37</created>
+    <modified>2012-10-15T12:06:37</modified>
+    <unit name="feet" meter="0.3048"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="LongGrass01">
+      <profile_COMMON>
+        <newparam sid="LongGrass01_png-surface">
+          <surface type="2D">
+            <init_from>LongGrass01_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="LongGrass01_png-sampler">
+          <sampler2D>
+            <source>LongGrass01_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="longgrass01_png-surface">
+          <surface type="2D">
+            <init_from>longgrass01_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="longgrass01_png-sampler">
+          <sampler2D>
+            <source>longgrass01_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.5882353 0.5882353 0.5882353 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="LongGrass01_png-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0.9 0.9 0.9 1</color>
+            </specular>
+            <shininess>
+              <float>9.999999</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <texture texture="longgrass01_png-sampler" texcoord="CHANNEL1"/>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <apply_reflection_dimming>0</apply_reflection_dimming>
+            <dim_level>0</dim_level>
+            <falloff_type>0</falloff_type>
+            <index_of_refraction>1.5</index_of_refraction>
+            <opacity_type>0</opacity_type>
+            <reflection_level>3</reflection_level>
+            <wire_size>1</wire_size>
+            <wire_units>0</wire_units>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_lock>1</ambient_diffuse_lock>
+            <ambient_diffuse_texture_lock>1</ambient_diffuse_texture_lock>
+            <diffuse_specular_lock>0</diffuse_specular_lock>
+            <soften>0.1</soften>
+            <use_self_illum_color>0</use_self_illum_color>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="LongGrass01-material" name="LongGrass01">
+      <instance_effect url="#LongGrass01"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="geom-LongGrass_GC256" name="LongGrass_GC256">
+      <mesh>
+        <source id="geom-LongGrass_GC256-positions">
+          <float_array id="geom-LongGrass_GC256-positions-array" count="162">-10.87699 -14.76378 -3.170355 1.81776e-9 -14.76378 0 10.87699 -14.76378 -3.170355 -10.87699 0 -3.170355 1.81776e-9 0 0 10.87699 0 -3.170355 -10.87699 14.76378 -3.170355 1.81776e-9 14.76378 0 10.87699 14.76378 -3.170355 10.31546 -14.3892 -4.675179 -0.009542227 -14.75741 -0.02557135 -6.395067 -17.75356 8.840563 12.59875 -1.148542 1.443713 2.273749 -1.51676 6.09332 -4.111775 -4.512904 14.95945 14.88204 12.09211 7.562604 4.557041 11.72389 12.21221 -1.828484 8.727749 21.07835 10.36418 -16.59071 4.169016 0.002011806 -14.75661 -0.02879238 -11.19071 -15.88141 1.319543 9.882806 -3.541883 11.05854 -0.4793659 -1.707787 6.860735 -11.67208 -2.832587 8.20907 9.401428 9.506942 17.94807 -0.9607437 11.34104 13.75026 -12.15346 10.21624 15.0986 2.86763 -18.14339 10.40663 0.01285148 -14.75836 -0.02178574 -8.147747 -13.61215 -7.796809 -0.2075815 -4.677215 15.61955 -3.06236 -1.292185 5.191128 -11.22296 -0.1459826 -2.583896 -3.282793 8.788955 20.83246 -6.137571 12.17399 10.40404 -14.29817 13.32019 2.629018 -6.672561 -17.70604 8.649686 0.01396251 -14.76144 -0.009404182 0.9361668 -12.78325 -11.1268 -10.01352 -3.502392 10.8999 -3.326992 -0.557786 2.240808 -2.404788 1.420405 -8.876587 -13.35447 10.70126 13.15011 -6.667946 13.64587 4.491019 -5.745742 15.62406 -6.626375 -10.87699 -14.76378 -3.170354 -1.08181e-7 -14.76378 0 10.87699 -14.76378 -3.170354 -10.87699 -8.10399e-8 -3.170354 1.81776e-9 0 0 10.87699 8.10399e-8 -3.170354 -10.87699 14.76378 -3.170354 1.11816e-7 14.76378 0 10.87699 14.76378 -3.170354</float_array>
+          <technique_common>
+            <accessor source="#geom-LongGrass_GC256-positions-array" count="54" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-LongGrass_GC256-normals">
+          <float_array id="geom-LongGrass_GC256-normals-array" count="162">-0.2798291 0 0.9600499 -1.97623e-8 0 1 -1.48217e-8 0 1 -0.2798291 0 0.9600498 0.279829 0 0.9600498 0.279829 0 0.9600498 -9.88113e-9 0 1 -0.2798291 0 0.9600498 0.279829 0 0.9600499 -0.3815253 0.4411724 -0.8122841 -0.6212995 0.4144529 -0.664993 -0.6212995 0.4144529 -0.664993 -0.3815252 0.4411724 -0.812284 -0.8114318 0.3546185 -0.4645688 -0.8114318 0.3546185 -0.4645688 -0.6212995 0.414453 -0.664993 -0.3815252 0.4411725 -0.8122841 -0.8114318 0.3546185 -0.4645688 0.4030213 0.438884 -0.8030906 0.1309863 0.4666507 -0.8746883 0.1309863 0.4666507 -0.8746883 0.4030213 0.438884 -0.8030908 -0.1515146 0.4571318 -0.8763983 -0.1515146 0.4571318 -0.8763981 0.1309862 0.4666506 -0.8746883 0.4030214 0.438884 -0.8030906 -0.1515147 0.4571318 -0.8763981 0.9450514 0.2806953 -0.1675949 0.8367866 0.3530881 -0.41847 0.8367865 0.3530881 -0.4184701 0.9450514 0.2806953 -0.1675949 0.6616622 0.3972689 -0.6359093 0.6616622 0.397269 -0.6359093 0.8367865 0.3530881 -0.41847 0.9450514 0.2806953 -0.1675949 0.6616621 0.397269 -0.6359092 0.7749047 0.08300177 0.6266047 0.909097 0.1524144 0.3877016 0.909097 0.1524144 0.3877017 0.7749047 0.08300176 0.6266046 0.9706521 0.209649 0.1178212 0.970652 0.209649 0.1178212 0.909097 0.1524143 0.3877017 0.7749047 0.08300175 0.6266046 0.970652 0.209649 0.1178213 -0.279829 1.21613e-9 0.9600499 4.94056e-9 6.33368e-10 1 1.7292e-8 0 1 -0.279829 6.08065e-10 0.9600499 0.279829 0 0.9600498 0.279829 -6.08065e-10 0.9600499 0 -6.33368e-10 1 -0.279829 0 0.9600499 0.279829 -1.21613e-9 0.9600498</float_array>
+          <technique_common>
+            <accessor source="#geom-LongGrass_GC256-normals-array" count="54" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-LongGrass_GC256-map0">
+          <float_array id="geom-LongGrass_GC256-map0-array" count="288">0 1 0 0.9869173 0.9985672 0.9854845 1 0.008006394 0.008006394 0.001356125 0.5996218 0.4017341 0.001356125 0.5996218 0.4017341 1 0.008006394 0.008006394 1 1 1 0.2135546 1 0.2135546 0.98851 1 0.98851 0 1 0 0.001356125 0.5996218 0.4017341 0 1 0 0 1 0 0.001356125 0.5996218 0.4017341 0.2135546 1 0.2135546 0 1 0 0 1 0 0.9869173 0.9985672 0.9854845 1 0.008006394 0.008006394 0.001356125 0.5996218 0.4017341 0.001356125 0.5996218 0.4017341 1 0.008006394 0.008006394 1 1 1 0.2135546 1 0.2135546 0.98851 1 0.98851 0 1 0 0.001356125 0.5996218 0.4017341 0 1 0 0 1 0 0.001356125 0.5996218 0.4017341 0.2135546 1 0.2135546 0 1 0 0 1 0 0.9869173 0.9985672 0.9854845 1 0.008006394 0.008006394 0.001356125 0.5996218 0.4017341 0.001356125 0.5996218 0.4017341 1 0.008006394 0.008006394 1 1 1 0.2135546 1 0.2135546 0.98851 1 0.98851 0 1 0 0.001356125 0.5996218 0.4017341 0 1 0 0 1 0 0.001356125 0.5996218 0.4017341 0.2135546 1 0.2135546 0 1 0 0 1 0 0.9869173 0.9985672 0.9854845 1 0.008006394 0.008006394 0.001356125 0.5996218 0.4017341 0.001356125 0.5996218 0.4017341 1 0.008006394 0.008006394 1 1 1 0.2135546 1 0.2135546 0.98851 1 0.98851 0 1 0 0.001356125 0.5996218 0.4017341 0 1 0 0 1 0 0.001356125 0.5996218 0.4017341 0.2135546 1 0.2135546 0 1 0 0 1 0 0.9869173 0.9985672 0.9854845 1 0.008006394 0.008006394 0.001356125 0.5996218 0.4017341 0.001356125 0.5996218 0.4017341 1 0.008006394 0.008006394 1 1 1 0.2135546 1 0.2135546 0.98851 1 0.98851 0 1 0 0.001356125 0.5996218 0.4017341 0 1 0 0 1 0 0.001356125 0.5996218 0.4017341 0.2135546 1 0.2135546 0 1 0 0 1 0 0.9869173 0.9985672 0.9854845 1 0.008006394 0.008006394 0.001356125 0.5996218 0.4017341 0.001356125 0.5996218 0.4017341 1 0.008006394 0.008006394 1 1 1 0.2135546 1 0.2135546 0.98851 1 0.98851 0 1 0 0.001356125 0.5996218 0.4017341 0 1 0 0 1 0 0.001356125 0.5996218 0.4017341 0.2135546 1 0.2135546 0 1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-LongGrass_GC256-map0-array" count="96" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-LongGrass_GC256-map1">
+          <float_array id="geom-LongGrass_GC256-map1-array" count="162">4.99517e-4 4.99696e-4 0.5 0.4999999 4.99606e-4 0.5 0.9995002 4.99517e-4 0.5 4.99666e-4 0.5000001 0.5 0.5 0.5 0.5 0.9995003 0.4999999 0.5 4.99815e-4 0.9995005 0.5 0.5000002 0.9995004 0.5 0.9995005 0.9995003 0.5 4.99517e-4 4.99696e-4 0.5 0.4999999 4.99606e-4 0.5 0.9995002 4.99517e-4 0.5 4.99666e-4 0.5000001 0.5 0.5 0.5 0.5 0.9995003 0.4999999 0.5 4.99815e-4 0.9995005 0.5 0.5000002 0.9995004 0.5 0.9995005 0.9995003 0.5 4.99517e-4 4.99696e-4 0.5 0.4999999 4.99606e-4 0.5 0.9995002 4.99517e-4 0.5 4.99666e-4 0.5000001 0.5 0.5 0.5 0.5 0.9995003 0.4999999 0.5 4.99815e-4 0.9995005 0.5 0.5000002 0.9995004 0.5 0.9995005 0.9995003 0.5 4.99517e-4 4.99696e-4 0.5 0.4999999 4.99606e-4 0.5 0.9995002 4.99517e-4 0.5 4.99666e-4 0.5000001 0.5 0.5 0.5 0.5 0.9995003 0.4999999 0.5 4.99815e-4 0.9995005 0.5 0.5000002 0.9995004 0.5 0.9995005 0.9995003 0.5 4.99517e-4 4.99696e-4 0.5 0.4999999 4.99606e-4 0.5 0.9995002 4.99517e-4 0.5 4.99666e-4 0.5000001 0.5 0.5 0.5 0.5 0.9995003 0.4999999 0.5 4.99815e-4 0.9995005 0.5 0.5000002 0.9995004 0.5 0.9995005 0.9995003 0.5 4.99517e-4 4.99696e-4 0.5 0.4999999 4.99606e-4 0.5 0.9995002 4.99517e-4 0.5 4.99666e-4 0.5000001 0.5 0.5 0.5 0.5 0.9995003 0.4999999 0.5 4.99815e-4 0.9995005 0.5 0.5000002 0.9995004 0.5 0.9995005 0.9995003 0.5</float_array>
+          <technique_common>
+            <accessor source="#geom-LongGrass_GC256-map1-array" count="54" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-LongGrass_GC256-vertices">
+          <input semantic="POSITION" source="#geom-LongGrass_GC256-positions"/>
+        </vertices>
+        <triangles material="LongGrass01_1" count="48">
+          <input semantic="VERTEX" source="#geom-LongGrass_GC256-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-LongGrass_GC256-normals" offset="1"/>
+          <input semantic="COLOR" source="#geom-LongGrass_GC256-map0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-LongGrass_GC256-map1" offset="3" set="1"/>
+          <p>0 0 1 0 1 1 2 1 4 2 3 4 4 2 3 4 3 3 0 3 0 0 1 0 1 1 5 1 2 4 6 2 5 5 7 5 5 5 7 5 4 2 4 4 1 1 5 1 3 3 9 3 4 2 10 4 7 6 11 7 7 6 11 7 6 7 8 6 3 3 9 3 4 2 13 4 5 5 14 5 8 8 15 8 8 8 15 8 7 6 12 7 4 2 13 4 9 9 17 9 10 10 18 10 13 11 19 13 13 11 19 13 12 12 16 12 9 9 17 9 10 10 21 10 11 13 22 11 14 14 23 14 14 14 23 14 13 11 20 13 10 10 21 10 12 12 25 12 13 11 26 13 16 15 27 16 16 15 27 16 15 16 24 15 12 12 25 12 13 11 29 13 14 14 30 14 17 17 31 17 17 17 31 17 16 15 28 16 13 11 29 13 18 18 33 18 19 19 34 19 22 20 35 22 22 20 35 22 21 21 32 21 18 18 33 18 19 19 37 19 20 22 38 20 23 23 39 23 23 23 39 23 22 20 36 22 19 19 37 19 21 21 41 21 22 20 42 22 25 24 43 25 25 24 43 25 24 25 40 24 21 21 41 21 22 20 45 22 23 23 46 23 26 26 47 26 26 26 47 26 25 24 44 25 22 20 45 22 27 27 49 27 28 28 50 28 31 29 51 31 31 29 51 31 30 30 48 30 27 27 49 27 28 28 53 28 29 31 54 29 32 32 55 32 32 32 55 32 31 29 52 31 28 28 53 28 30 30 57 30 31 29 58 31 34 33 59 34 34 33 59 34 33 34 56 33 30 30 57 30 31 29 61 31 32 32 62 32 35 35 63 35 35 35 63 35 34 33 60 34 31 29 61 31 36 36 65 36 37 37 66 37 40 38 67 40 40 38 67 40 39 39 64 39 36 36 65 36 37 37 69 37 38 40 70 38 41 41 71 41 41 41 71 41 40 38 68 40 37 37 69 37 39 39 73 39 40 38 74 40 43 42 75 43 43 42 75 43 42 43 72 42 39 39 73 39 40 38 77 40 41 41 78 41 44 44 79 44 44 44 79 44 43 42 76 43 40 38 77 40 45 45 81 45 46 46 82 46 49 47 83 49 49 47 83 49 48 48 80 48 45 45 81 45 46 46 85 46 47 49 86 47 50 50 87 50 50 50 87 50 49 47 84 49 46 46 85 46 48 48 89 48 49 47 90 49 52 51 91 52 52 51 91 52 51 52 88 51 48 48 89 48 49 47 93 49 50 50 94 50 53 53 95 53 53 53 95 53 52 51 92 52 49 47 93 49</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-LongGrass_GC128" name="LongGrass_GC128">
+      <mesh>
+        <source id="geom-LongGrass_GC128-positions">
+          <float_array id="geom-LongGrass_GC128-positions-array" count="81">10.31546 -14.3892 -4.675179 -1.828484 8.727749 21.07835 -6.395067 -17.75356 8.840563 -10.87699 14.76378 -3.170355 10.87699 -14.76378 -3.170355 10.87699 14.76378 -3.170355 -10.87699 14.76378 -3.170354 10.87699 -14.76378 -3.170354 10.87699 14.76378 -3.170354 -13.35447 10.70126 13.15011 0.9361668 -12.78325 -11.1268 -6.672561 -17.70604 8.649686 9.401428 9.506942 17.94807 -11.19071 -15.88141 1.319543 10.36418 -16.59071 4.169016 -10.87699 -14.76378 -3.170355 -5.745742 15.62406 -6.626375 -10.87699 -14.76378 -3.170354 -3.282793 8.788955 20.83246 -8.147747 -13.61215 -7.796809 -14.29817 13.32019 2.629018 2.86763 -18.14339 10.40663 14.88204 12.09211 7.562604 -12.15346 10.21624 15.0986 0.002011806 -14.75661 -0.02879238 -6.667946 13.64587 4.491019 -1.08181e-7 -14.76378 0</float_array>
+          <technique_common>
+            <accessor source="#geom-LongGrass_GC128-positions-array" count="27" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-LongGrass_GC128-normals">
+          <float_array id="geom-LongGrass_GC128-normals-array" count="81">-0.6212995 0.4144529 -0.664993 -0.6212996 0.4144529 -0.664993 -0.6212995 0.4144529 -0.664993 0 0 1 0 0 0.9999999 0 0 0.9999999 1.9791e-8 0.02488998 0.9996903 0.279829 0 0.9600498 0.06516654 0.0827667 0.994436 -0.06516649 0.0827667 0.994436 0.9144478 0.1284215 0.383788 0.7749047 0.08300176 0.6266046 0.8999756 0.05719295 0.4321724 0.9455612 0.08668652 0.313687 0.1301342 0.4885049 -0.8628024 0.192129 0.5350821 -0.8226625 0.4030214 0.438884 -0.8030906 0 0 1 0.9706521 0.209649 0.1178213 -0.279829 0 0.9600499 0.8367864 0.3530881 -0.4184701 0.8367866 0.3530881 -0.4184701 0.8367866 0.3530881 -0.4184701 0.8367865 0.3530881 -0.4184701 -0.6212995 0.4144529 -0.664993 -0.1515146 0.4571319 -0.8763981 0.06298865 0.5393316 -0.8397344</float_array>
+          <technique_common>
+            <accessor source="#geom-LongGrass_GC128-normals-array" count="27" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-LongGrass_GC128-map0">
+          <float_array id="geom-LongGrass_GC128-map0-array" count="90">0 1 0 1 1 1 0.9869173 0.9985672 0.9854845 0 1 0 0.98851 1 0.98851 1 1 1 0 1 0 0.98851 1 0.98851 1 1 1 0.98851 1 0.98851 1 1 1 0.9869173 0.9985672 0.9854845 0.98851 1 0.98851 1 1 1 0.9869173 0.9985672 0.9854845 0.9869173 0.9985672 0.9854845 0 1 0 0.9869173 0.9985672 0.9854845 0 1 0 0.98851 1 0.98851 1 1 1 0.9869173 0.9985672 0.9854845 0.98851 1 0.98851 0 1 0 1 0.008006394 0.008006394 1 0.008006394 0.008006394 0 1 0 0 1 0 1 0.008006394 0.008006394 1 0.008006394 0.008006394</float_array>
+          <technique_common>
+            <accessor source="#geom-LongGrass_GC128-map0-array" count="30" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-LongGrass_GC128-map1">
+          <float_array id="geom-LongGrass_GC128-map1-array" count="81">4.99517e-4 4.99696e-4 0.5 0.9995002 4.99517e-4 0.5 0.9995005 0.9995003 0.5 0.9995005 0.9995003 0.5 4.99815e-4 0.9995005 0.5 0.9995002 4.99517e-4 0.5 0.9995005 0.9995003 0.5 4.99815e-4 0.9995005 0.5 0.9995002 4.99517e-4 0.5 4.99517e-4 4.99696e-4 0.5 0.9995002 4.99517e-4 0.5 4.99815e-4 0.9995005 0.5 0.9995002 4.99517e-4 0.5 4.99815e-4 0.9995005 0.5 4.99517e-4 4.99696e-4 0.5 4.99517e-4 4.99696e-4 0.5 0.9995005 0.9995003 0.5 4.99517e-4 4.99696e-4 0.5 4.99815e-4 0.9995005 0.5 0.9995002 4.99517e-4 0.5 0.9995005 0.9995003 0.5 4.99517e-4 4.99696e-4 0.5 4.99815e-4 0.9995005 0.5 0.9995005 0.9995003 0.5 0.4999999 4.99606e-4 0.5 0.5000002 0.9995004 0.5 0.4999999 4.99606e-4 0.5</float_array>
+          <technique_common>
+            <accessor source="#geom-LongGrass_GC128-map1-array" count="27" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-LongGrass_GC128-vertices">
+          <input semantic="POSITION" source="#geom-LongGrass_GC128-positions"/>
+        </vertices>
+        <triangles material="LongGrass01" count="15">
+          <input semantic="VERTEX" source="#geom-LongGrass_GC128-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-LongGrass_GC128-normals" offset="1"/>
+          <input semantic="COLOR" source="#geom-LongGrass_GC128-map0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-LongGrass_GC128-map1" offset="3" set="1"/>
+          <p>0 0 2 0 2 1 1 1 22 2 22 22 5 3 3 3 3 4 4 4 4 5 5 5 26 6 28 26 7 7 8 8 8 8 6 6 8 8 6 6 6 9 7 7 26 6 28 26 25 10 27 25 9 11 9 11 11 12 11 9 11 12 11 9 10 13 10 10 25 10 27 25 24 14 25 24 12 15 12 13 14 16 14 14 4 5 5 5 3 4 4 4 15 17 15 15 25 10 26 25 10 13 10 10 16 18 16 16 26 6 29 26 6 9 7 7 17 19 17 17 18 20 19 18 19 21 20 19 20 22 18 20 21 23 21 21 19 21 20 19 18 20 19 18 1 24 0 2 22 2 22 22 2 1 1 1 24 14 24 24 13 25 13 12 23 26 23 23 23 26 23 23 12 15 12 13 24 14 24 24</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_lights>
+    <light id="EnvironmentAmbientLight" name="EnvironmentAmbientLight">
+      <technique_common>
+        <ambient>
+          <color>0 0 0</color>
+        </ambient>
+      </technique_common>
+    </light>
+  </library_lights>
+  <library_images>
+    <image id="LongGrass01_png">
+      <init_from>file:///C:/Users/RonMain/Documents/3dsmax/sceneassets/GroundCover/LongGrass01.png</init_from>
+    </image>
+    <image id="longgrass01_png">
+      <init_from>file:///C:/Users/RonMain/Documents/3dsmax/sceneassets/GroundCover/longgrass01.png</init_from>
+    </image>
+  </library_images>
+  <library_visual_scenes>
+    <visual_scene id="MaxScene">
+      <node name="EnvironmentAmbientLight">
+        <instance_light url="#EnvironmentAmbientLight"/>
+      </node>
+      <node id="node-Base01" name="Base01">
+        <matrix>1 0 0 0.2186104 0 1 0 0.6558313 0 0 1 0 0 0 0 1</matrix>
+        <node id="node-Start01" name="Start01">
+          <matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+          <node id="node-LongGrass_GC256" name="LongGrass_GC256">
+            <matrix>-0.1342981 -0.0270385 0.1086225 -0.1480619 0.1119372 -0.03243981 0.1303213 -0.4029292 -1.86265e-9 0.169654 0.04223057 0 0 0 0 1</matrix>
+            <node>
+              <matrix>1 0 0 0 0 1 0 14.70208 0 0 1 0 0 0 0 1</matrix>
+              <instance_geometry url="#geom-LongGrass_GC256">
+                <bind_material>
+                  <technique_common>
+                    <instance_material symbol="LongGrass01_1" target="#LongGrass01-material">
+                      <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="1"/>
+                      <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="1"/>
+                    </instance_material>
+                  </technique_common>
+                </bind_material>
+              </instance_geometry>
+            </node>
+          </node>
+          <node id="node-LongGrass_GC128" name="LongGrass_GC128">
+            <matrix>-0.1342981 -0.0270385 0.1086225 -0.1480619 0.1119372 -0.03243981 0.1303213 -0.4029292 -1.86265e-9 0.169654 0.04223057 0 0 0 0 1</matrix>
+            <node>
+              <matrix>1 0 0 0 0 1 0 14.70208 0 0 1 0 0 0 0 1</matrix>
+              <instance_geometry url="#geom-LongGrass_GC128">
+                <bind_material>
+                  <technique_common>
+                    <instance_material symbol="LongGrass01" target="#LongGrass01-material">
+                      <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="1"/>
+                      <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="1"/>
+                    </instance_material>
+                  </technique_common>
+                </bind_material>
+              </instance_geometry>
+            </node>
+          </node>
+        </node>
+        <node id="node-detail256" name="detail256">
+          <matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        </node>
+        <node id="node-detail128" name="detail128">
+          <matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        </node>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#MaxScene"/>
+  </scene>
+</COLLADA>
